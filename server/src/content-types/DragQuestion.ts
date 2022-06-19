@@ -14,7 +14,7 @@ export default class DragQuestion extends InteractiveVideoInteraction {
     public readRow(row: string[]) {
         super.readRow(row);
 
-        this.taskDescription = row[6];
+        this.taskDescription = row[6].trim();
         this.entries = [];
         let nextCell = row[8];
         let index = 8;
@@ -26,8 +26,8 @@ export default class DragQuestion extends InteractiveVideoInteraction {
                 );
             }
             this.entries.push({
-                dropZoneCaption: match[1],
-                dragableText: match[3]
+                dropZoneCaption: match[1].trim(),
+                dragableText: match[3].trim()
             });
             index++;
             nextCell = row[index];

@@ -12,8 +12,8 @@ export default class DragText extends InteractiveVideoInteraction {
     public readRow(row: string[]) {
         super.readRow(row);
 
-        this.title = row[3];
-        this.taskDescription = row[6];
-        this.task = row[7];
+        this.title = row[3].trim();
+        this.taskDescription = row[6].trim();
+        this.task = row[7].trim();
     }
 }

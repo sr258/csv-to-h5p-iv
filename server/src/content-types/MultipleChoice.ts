@@ -15,8 +15,8 @@ export default class MultipleChoice extends InteractiveVideoInteraction {
     public readRow(row: string[]) {
         super.readRow(row);
 
-        this.title = row[3];
-        this.question = row[6];
+        this.title = row[3].trim();
+        this.question = row[6].trim();
         this.options = row[7]
             .split('\n')
             .map((o) => o.trim())
@@ -24,12 +24,12 @@ export default class MultipleChoice extends InteractiveVideoInteraction {
                 const match = /^\*\s*(.+)/.exec(o);
                 if (match) {
                     return {
-                        text: match[1],
+                        text: match[1].trim(),
                         correct: true
                     };
                 }
                 return {
-                    text: o,
+                    text: o.trim(),
                     correct: false
                 };
             });

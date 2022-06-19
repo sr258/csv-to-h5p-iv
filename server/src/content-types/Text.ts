@@ -9,6 +9,6 @@ export default class Text extends InteractiveVideoInteraction {
     public readRow(row: string[]) {
         super.readRow(row);
 
-        this.text = row[6];
+        this.text = row[6].trim();
     }
 }

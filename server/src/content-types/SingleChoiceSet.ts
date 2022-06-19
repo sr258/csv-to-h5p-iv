@@ -12,8 +12,8 @@ export default class SingleChoiceSet extends InteractiveVideoInteraction {
     public readRow(row: string[]) {
         super.readRow(row);
 
-        this.title = row[3];
-        this.question = row[6];
+        this.title = row[3].trim();
+        this.question = row[6].trim();
         this.options = row[7].split('\n').map((o) => o.trim());
     }
 }

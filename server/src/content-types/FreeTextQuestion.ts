@@ -12,8 +12,8 @@ export default class FreeTextQuestion extends InteractiveVideoInteraction {
     public readRow(row: string[]) {
         super.readRow(row);
 
-        this.title = row[3];
-        this.question = row[6];
-        this.placeholder = row[7];
+        this.title = row[3].trim();
+        this.question = row[6].trim();
+        this.placeholder = row[7].trim();
     }
 }
