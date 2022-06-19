@@ -34,7 +34,7 @@ export default class Converter {
         return converter;
     };
 
-    public init = async () => {
+    protected init = async () => {
         this.generalPurposeCache = new fsImplementations.InMemoryStorage();
         this.libraryStorage = new fsImplementations.FileLibraryStorage(
             path.join(__dirname, '../h5p-libraries')
