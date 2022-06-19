@@ -1,0 +1,17 @@
+{
+    "embedTypes": [
+        "iframe"
+    ],
+    "language": "en",
+    "defaultLanguage": "de",
+    "license": "U",
+    "title": "Test",
+    "mainLibrary": "H5P.Blanks",
+    "preloadedDependencies": [
+        {
+            "machineName": "H5P.Blanks",
+            "majorVersion": 1,
+            "minorVersion": 14
+        }
+    ]
+}

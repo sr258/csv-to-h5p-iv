@@ -20,12 +20,12 @@ export default class Converter {
     public contentStorage: IContentStorage;
     public libraryStorage: ILibraryStorage;
     public temporaryStorage: ITemporaryFileStorage;
+    public h5pEditor: H5PEditor;
+    public h5pPlayer: H5PPlayer;
 
     protected contentDir: DirectoryResult;
     protected generalPurposeCache: IKeyValueStorage;
     protected h5pConfig: H5PConfig;
-    protected h5pEditor: H5PEditor;
-    protected h5pPlayer: H5PPlayer;
     protected temporaryDir: DirectoryResult;
 
     public static create = async (): Promise<Converter> => {
