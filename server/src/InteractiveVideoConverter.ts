@@ -2,6 +2,7 @@ import papa from 'papaparse';
 import fs from 'fs/promises';
 
 import Converter from './Converter';
+import InteractiveVideo from './content-types/InteractiveVideo';
 
 export default class InteractiveVideoConverter extends Converter {
     public static create = async (): Promise<InteractiveVideoConverter> => {
@@ -10,7 +11,7 @@ export default class InteractiveVideoConverter extends Converter {
         return converter;
     };
 
-    public convert = async (csvFile: string) => {
+    public parse = async (csvFile: string) => {
         let unparsedCsv: string;
         try {
             unparsedCsv = await fs.readFile(csvFile, {
@@ -44,6 +45,6 @@ export default class InteractiveVideoConverter extends Converter {
             row.some((cell) => cell != '')
         );
 
-        return data;
+        return InteractiveVideo.fromCsvRows(data as string[][]);
     };
 }

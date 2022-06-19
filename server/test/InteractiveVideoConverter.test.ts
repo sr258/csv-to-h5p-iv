@@ -11,9 +11,9 @@ describe('Interactive Video Converter', () => {
         const converter = await InteractiveVideoConverter.create();
 
         // test
-        const result = await converter.convert(
-            path.join(__dirname, './__fixtures__/file1.csv')
+        const result = await converter.parse(
+            path.join(__dirname, './__fixtures__/file2.csv')
         );
-        expect(result).toMatchObject([]);
+        expect(result).toMatchObject({});
     });
 });
