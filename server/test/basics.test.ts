@@ -1,5 +1,6 @@
 import path from 'path';
 import fs from 'fs-extra';
+import { withFile } from 'tmp-promise';
 
 import Converter from '../src/Converter';
 import User from '../src/User';
@@ -35,7 +36,7 @@ describe('basic tests', () => {
         ).resolves.toMatchObject([]);
     });
 
-    it('can save static content and regenerate the full metadata', async () => {
+    it('can save static content, regenerate the full metadata and export it to .h5p', async () => {
         // prepare
         const converter = await Converter.create();
         const params = await fs.readJSON(
@@ -82,6 +83,27 @@ describe('basic tests', () => {
                 replacer,
                 2
             )
+        );
+
+        await withFile(
+            async (tmpResult) => {
+                const writeStream = fs.createWriteStream(tmpResult.path);
+                const packageFinishedPromise = new Promise<void>((resolve) => {
+                    writeStream.on('close', () => {
+                        resolve();
+                    });
+                });
+                await converter.h5pEditor.exportContent(
+                    contentId,
+                    writeStream,
+                    new User()
+                );
+                await packageFinishedPromise;
+                writeStream.close();
+            },
+            {
+                keep: false
+            }
         );
     });
 });
