@@ -14,6 +14,6 @@ describe('Interactive Video Converter', () => {
         const result = await converter.parse(
             path.join(__dirname, './__fixtures__/file2.csv')
         );
-        expect(result).toMatchObject({});
+        expect(result).toMatchSnapshot();
     });
 });
