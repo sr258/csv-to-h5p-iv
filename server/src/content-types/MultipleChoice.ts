@@ -5,7 +5,6 @@ export default class MultipleChoice extends InteractiveVideoInteraction {
         super('MultipleChoice');
     }
 
-    public title: string;
     public question: string;
     public options: {
         text: string;
@@ -15,7 +14,6 @@ export default class MultipleChoice extends InteractiveVideoInteraction {
     public readRow(row: string[]) {
         super.readRow(row);
 
-        this.title = row[3].trim();
         this.question = row[6].trim();
         this.options = row[7]
             .split('\n')

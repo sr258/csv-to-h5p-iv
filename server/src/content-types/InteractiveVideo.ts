@@ -41,4 +41,8 @@ export default class InteractiveVideo {
 
         return iv;
     }
+
+    public generateParameters(): any {
+        return 
+    }
 }

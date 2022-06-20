@@ -1,0 +1,1673 @@
+{
+    "interactiveVideo": {
+        "video": {
+            "startScreenOptions": {
+                "title": "《搭巴士》Taking The Bus (Child, Lv 1): Interactive Video",
+                "hideStartTitle": false
+            },
+            "textTracks": {
+                "videoTrack": [
+                    {
+                        "label": "Subtitles",
+                        "kind": "subtitles",
+                        "srcLang": "en"
+                    }
+                ]
+            },
+            "files": [
+                {
+                    "path": "https://www.youtube.com/watch?v=FwdMr6cYcN0&amp;ab_channel=%E5%86%9A%E5%94%AA%E5%94%A5%E7%B2%B5%E6%96%87%E8%AE%80%E6%9C%ACHambaanglaangCantoneseGradedReaders",
+                    "mime": "video/YouTube",
+                    "copyright": {
+                        "license": "U"
+                    }
+                }
+            ]
+        },
+        "assets": {
+            "interactions": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 22.882,
+                        "to": 24.882
+                    },
+                    "libraryTitle": "Drag the Words",
+                    "action": {
+                        "library": "H5P.DragText 1.10",
+                        "params": {
+                            "media": {
+                                "disableImageZooming": false
+                            },
+                            "taskDescription": "<p>將單詞拖到正確嘅方格內。</p>\n\n<p>zoeng1 daan1 ci4 to1 dou3 zing3 kok3 ge3 fong1 gaak3 noi6.</p>\n\n<p>Drag the words into the correct boxes.</p>\n",
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "checkAnswer": "Check",
+                            "submitAnswer": "Submit",
+                            "tryAgain": "Retry",
+                            "showSolution": "Show solution",
+                            "dropZoneIndex": "Drop Zone @index.",
+                            "empty": "Drop Zone @index is empty.",
+                            "contains": "Drop Zone @index contains draggable @draggable.",
+                            "ariaDraggableIndex": "@index of @count draggables.",
+                            "tipLabel": "Show tip",
+                            "correctText": "Correct!",
+                            "incorrectText": "Incorrect!",
+                            "resetDropTitle": "Reset drop",
+                            "resetDropDescription": "Are you sure you want to reset this drop zone?",
+                            "grabbed": "Draggable is grabbed.",
+                            "cancelledDragging": "Cancelled dragging.",
+                            "correctAnswer": "Correct answer:",
+                            "feedbackHeader": "Feedback",
+                            "behaviour": {
+                                "enableRetry": true,
+                                "enableSolutionsButton": true,
+                                "enableCheckButton": true,
+                                "instantFeedback": false
+                            },
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again.",
+                            "textField": "首先， 我*起身 hei2 san1*\nsau2 sin1, ngo5 ___. \nFirst, I ___.\n\n然後， 我*換衫 wun6 saam1*\njin4 hau6, ngo5 ___. \nThen, I ___.\n\n跟住， 我*食包 sik6 baau1*\ngan1 zyu6, ngo5 ___. \nAfter that, I ___.\n\n最後， 我*搭車 daap3 ce1*\nzeoi3 hau6, ngo5 ___. \nFinally, I ___."
+                        },
+                        "subContentId": "c7edb576-370c-489b-bbcc-42441c9993ea",
+                        "metadata": {
+                            "contentType": "Drag the Words",
+                            "license": "U",
+                            "title": "Drag the Words: Ordering Events",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Drag the Words: Ordering Events"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": "<p>Try again!</p>\n"
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": "<p>Order the events.</p>\n"
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 29.874,
+                        "to": 31.873
+                    },
+                    "libraryTitle": "Single Choice Set",
+                    "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                            "choices": [
+                                {
+                                    "subContentId": "85a609b7-0644-42cc-baa7-e6fe80171715",
+                                    "question": "<p>邊個同你搭巴士?</p>\n\n<p>bin1 go3 tung4 nei5 daap3 baa1 si2?</p>\n\n<p>Who went on the bus with you?</p>\n",
+                                    "answers": [
+                                        "<p>媽媽 maa4 maa1 Mom</p>\n",
+                                        "<p>爸爸 baa4 baa1 Dad</p>\n",
+                                        "<p>婆婆 po4 po2 Grandma</p>\n",
+                                        "<p>爺爺 je4 je2 Grandpa</p>\n"
+                                    ]
+                                },
+                                {
+                                    "subContentId": "919134df-7179-47b1-9c88-98b49998a5e5"
+                                }
+                            ],
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "behaviour": {
+                                "autoContinue": true,
+                                "timeoutCorrect": 2000,
+                                "timeoutWrong": 3000,
+                                "soundEffectsEnabled": true,
+                                "enableRetry": true,
+                                "enableSolutionsButton": false,
+                                "passPercentage": 100
+                            },
+                            "l10n": {
+                                "nextButtonLabel": "Next question",
+                                "showSolutionButtonLabel": "Show solution",
+                                "retryButtonLabel": "Retry",
+                                "solutionViewTitle": "Solution list",
+                                "correctText": "Correct!",
+                                "incorrectText": "Incorrect!",
+                                "muteButtonLabel": "Mute feedback sound",
+                                "closeButtonLabel": "Close",
+                                "slideOfTotal": "Slide :num of :total",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "solutionListQuestionNumber": "Question :num",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            }
+                        },
+                        "subContentId": "b9d03d9b-9e5e-4692-aeef-d62e72d39300",
+                        "metadata": {
+                            "contentType": "Single Choice Set",
+                            "license": "U",
+                            "title": "Single Choice Set: Who went on the bus with you?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Single Choice Set: Who went on the bus with you?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": "<p>Review Slide 1</p>\n",
+                            "seekTo": 29.874
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 39.99935558773972,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 47.006,
+                        "to": 49.006
+                    },
+                    "libraryTitle": "True/False Question",
+                    "action": {
+                        "library": "H5P.TrueFalse 1.8",
+                        "params": {
+                            "media": {
+                                "disableImageZooming": false
+                            },
+                            "correct": "false",
+                            "behaviour": {
+                                "enableRetry": true,
+                                "enableSolutionsButton": false,
+                                "enableCheckButton": true,
+                                "confirmCheckDialog": false,
+                                "confirmRetryDialog": false,
+                                "autoCheck": false
+                            },
+                            "l10n": {
+                                "trueText": "True",
+                                "falseText": "False",
+                                "score": "You got @score of @total points",
+                                "checkAnswer": "Check",
+                                "submitAnswer": "Submit",
+                                "showSolutionButton": "Show solution",
+                                "tryAgain": "Retry",
+                                "wrongAnswerMessage": "Wrong answer",
+                                "correctAnswerMessage": "Correct answer",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            },
+                            "confirmCheck": {
+                                "header": "Finish ?",
+                                "body": "Are you sure you wish to finish ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Finish"
+                            },
+                            "confirmRetry": {
+                                "header": "Retry ?",
+                                "body": "Are you sure you wish to retry ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Confirm"
+                            },
+                            "question": "<p>十分鐘之後有巴士.</p>\n\n<p>sap6 fan1 zung1 zi1 hau6 jau5 baa1 si2.</p>\n\n<p>There is a bus after 10 minutes.</p>\n"
+                        },
+                        "subContentId": "c0f0008e-441a-4e22-bf40-e13960028411",
+                        "metadata": {
+                            "contentType": "True/False Question",
+                            "license": "U",
+                            "title": "True/False Question: 10 Minutes",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "True/False Question: 10 Minutes"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 68.748,
+                        "to": 70.748
+                    },
+                    "libraryTitle": "Single Choice Set",
+                    "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "behaviour": {
+                                "autoContinue": true,
+                                "timeoutCorrect": 2000,
+                                "timeoutWrong": 3000,
+                                "soundEffectsEnabled": true,
+                                "enableRetry": true,
+                                "enableSolutionsButton": false,
+                                "passPercentage": 100
+                            },
+                            "l10n": {
+                                "nextButtonLabel": "Next question",
+                                "showSolutionButtonLabel": "Show solution",
+                                "retryButtonLabel": "Retry",
+                                "solutionViewTitle": "Solution list",
+                                "correctText": "Correct!",
+                                "incorrectText": "Incorrect!",
+                                "muteButtonLabel": "Mute feedback sound",
+                                "closeButtonLabel": "Close",
+                                "slideOfTotal": "Slide :num of :total",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "solutionListQuestionNumber": "Question :num",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            },
+                            "choices": [
+                                {
+                                    "question": "<p>如果架巴士唔嚟，佢哋會搭乜嘢交通工具?</p>\n\n<p>jyu4 gwo2 gaa2 baa1 si2 m4 lai4, keoi5 dei6 wui5 daap3 mat1 je5 gaau1 tung1 gung1 geoi6?</p>\n\n<p>What transportation will they take if the bus doesn't come?</p>\n",
+                                    "answers": [
+                                        "<p>地鐵 dei6 tit3 Subway/MTR</p>\n",
+                                        "<p>船 syun4 Boat/Ferry</p>\n",
+                                        "<p>飛機 fei1 gei1 Airplane</p>\n",
+                                        "<p>單車 daan1 ce1 Bicycle</p>\n"
+                                    ],
+                                    "subContentId": "d37d2298-a625-4680-93a9-4af328880aef"
+                                }
+                            ]
+                        },
+                        "subContentId": "7bc486d6-43c0-4648-bd48-5326ad259d90",
+                        "metadata": {
+                            "contentType": "Single Choice Set",
+                            "license": "U",
+                            "title": "Single Choice Set: What transportation?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Single Choice Set: What transportation?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": "<p>Multiple Choice Question</p>\n"
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 157.924,
+                        "to": 159.924
+                    },
+                    "libraryTitle": "Single Choice Set",
+                    "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                            "choices": [
+                                {
+                                    "subContentId": "96494c8b-86dd-4787-8357-c4858a10f651",
+                                    "question": "<p>邊個畀位你坐?</p>\n\n<p>bin1 go3 bei2 wai2 nei5 co5?</p>\n\n<p>Who gave up their seat for you?</p>\n",
+                                    "answers": [
+                                        "<p>叔叔 suk1 suk1 Uncle</p>\n",
+                                        "<p>姨姨 ji1 ji1 Aunt</p>\n",
+                                        "<p>同學 tung4 hok6 Schoolmate</p>\n",
+                                        "<p>朋友 pang4 jau5 Friend</p>\n"
+                                    ]
+                                },
+                                {
+                                    "subContentId": "0d39e08b-28a0-432b-a44c-290100f1c8f9"
+                                }
+                            ],
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "behaviour": {
+                                "autoContinue": true,
+                                "timeoutCorrect": 2000,
+                                "timeoutWrong": 3000,
+                                "soundEffectsEnabled": true,
+                                "enableRetry": true,
+                                "enableSolutionsButton": false,
+                                "passPercentage": 100
+                            },
+                            "l10n": {
+                                "nextButtonLabel": "Next question",
+                                "showSolutionButtonLabel": "Show solution",
+                                "retryButtonLabel": "Retry",
+                                "solutionViewTitle": "Solution list",
+                                "correctText": "Correct!",
+                                "incorrectText": "Incorrect!",
+                                "muteButtonLabel": "Mute feedback sound",
+                                "closeButtonLabel": "Close",
+                                "slideOfTotal": "Slide :num of :total",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "solutionListQuestionNumber": "Question :num",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            }
+                        },
+                        "subContentId": "17fd837a-3667-484d-9853-89eb0cc1ae71",
+                        "metadata": {
+                            "contentType": "Single Choice Set",
+                            "license": "U",
+                            "title": "Single Choice Set: Who gave up their seat for you?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Single Choice Set: Who gave up their seat for you?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": "<p>Multiple Choice Question</p>\n"
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 201.865,
+                        "to": 203.865
+                    },
+                    "libraryTitle": "Single Choice Set",
+                    "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                            "choices": [
+                                {
+                                    "subContentId": "411b3d70-0e80-477c-a185-c7e914cf1dcb",
+                                    "question": "<p>你同叔叔講乜嘢？</p>\n\n<p>nei5 tung4 suk1 suk1 gong2 mat1 je5?</p>\n\n<p>What did you say to Uncle?</p>\n",
+                                    "answers": [
+                                        "<p>多謝 do1 ze6 Thank you&nbsp;</p>\n",
+                                        "<p>唔好意思 m4 hou2 ji3 si3 Excuse me/Sorry</p>\n",
+                                        "<p>唔緊要 m4 gan2 jiu3 No problem</p>\n",
+                                        "<p>好呀 hou2 aa3 Great</p>\n"
+                                    ]
+                                },
+                                {
+                                    "subContentId": "b1ea1dc4-0682-494d-acf3-97bbd1c127ae"
+                                }
+                            ],
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "behaviour": {
+                                "autoContinue": true,
+                                "timeoutCorrect": 2000,
+                                "timeoutWrong": 3000,
+                                "soundEffectsEnabled": true,
+                                "enableRetry": true,
+                                "enableSolutionsButton": false,
+                                "passPercentage": 100
+                            },
+                            "l10n": {
+                                "nextButtonLabel": "Next question",
+                                "showSolutionButtonLabel": "Show solution",
+                                "retryButtonLabel": "Retry",
+                                "solutionViewTitle": "Solution list",
+                                "correctText": "Correct!",
+                                "incorrectText": "Incorrect!",
+                                "muteButtonLabel": "Mute feedback sound",
+                                "closeButtonLabel": "Close",
+                                "slideOfTotal": "Slide :num of :total",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "solutionListQuestionNumber": "Question :num",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            }
+                        },
+                        "subContentId": "fc149d41-c526-4ae8-aa55-92eecd4b9192",
+                        "metadata": {
+                            "contentType": "Single Choice Set",
+                            "license": "U",
+                            "title": "Single Choice Set: What did you say to Uncle?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Single Choice Set: What did you say to Uncle?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": "<p>Multiple Choice Question</p>\n"
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.493645778761,
+                    "duration": {
+                        "from": 221.627,
+                        "to": 223.627
+                    },
+                    "libraryTitle": "True/False Question",
+                    "action": {
+                        "library": "H5P.TrueFalse 1.8",
+                        "params": {
+                            "media": {
+                                "disableImageZooming": false
+                            },
+                            "correct": "true",
+                            "behaviour": {
+                                "enableRetry": true,
+                                "enableSolutionsButton": false,
+                                "enableCheckButton": true,
+                                "confirmCheckDialog": false,
+                                "confirmRetryDialog": false,
+                                "autoCheck": false
+                            },
+                            "l10n": {
+                                "trueText": "True",
+                                "falseText": "False",
+                                "score": "You got @score of @total points",
+                                "checkAnswer": "Check",
+                                "submitAnswer": "Submit",
+                                "showSolutionButton": "Show solution",
+                                "tryAgain": "Retry",
+                                "wrongAnswerMessage": "Wrong answer",
+                                "correctAnswerMessage": "Correct answer",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            },
+                            "confirmCheck": {
+                                "header": "Finish ?",
+                                "body": "Are you sure you wish to finish ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Finish"
+                            },
+                            "confirmRetry": {
+                                "header": "Retry ?",
+                                "body": "Are you sure you wish to retry ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Confirm"
+                            },
+                            "question": "<p>架巴士企滿晒人.</p>\n\n<p>gaa3 baa1 si2 kei5 mun5 saai3 jan4.</p>\n\n<p>The bus is full of people.</p>\n"
+                        },
+                        "subContentId": "ca4020a1-c1d8-451f-925c-b3e892af4979",
+                        "metadata": {
+                            "contentType": "True/False Question",
+                            "license": "U",
+                            "title": "True/False Question: Is the bus full?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "True/False Question: Is the bus full?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": "<p>True/False Question</p>\n"
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 39.99935943044215,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 252,
+                        "to": 254
+                    },
+                    "libraryTitle": "Single Choice Set",
+                    "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                            "choices": [
+                                {
+                                    "subContentId": "563e645a-8910-4a38-8792-8bdd58fc0462",
+                                    "question": "<p>巴士啲人點叫你？</p>\n\n<p>ba1 si2 di1 jan4 dim2 giu3 nei5?</p>\n\n<p>What did the people on the bus call you?</p>\n",
+                                    "answers": [
+                                        "<p>叻女 lek1 neoi2 Good girl</p>\n",
+                                        "<p>叻仔 lek1 zai2 Good boy</p>\n",
+                                        "<p>靚仔 leng3 zai2 Pretty boy</p>\n",
+                                        "<p>靚女 leng3 neoi2 Pretty girl</p>\n"
+                                    ]
+                                },
+                                {
+                                    "subContentId": "318bc431-b62f-4d5f-9025-04bc3e851125"
+                                }
+                            ],
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "behaviour": {
+                                "autoContinue": true,
+                                "timeoutCorrect": 2000,
+                                "timeoutWrong": 3000,
+                                "soundEffectsEnabled": true,
+                                "enableRetry": true,
+                                "enableSolutionsButton": false,
+                                "passPercentage": 100
+                            },
+                            "l10n": {
+                                "nextButtonLabel": "Next question",
+                                "showSolutionButtonLabel": "Show solution",
+                                "retryButtonLabel": "Retry",
+                                "solutionViewTitle": "Solution list",
+                                "correctText": "Correct!",
+                                "incorrectText": "Incorrect!",
+                                "muteButtonLabel": "Mute feedback sound",
+                                "closeButtonLabel": "Close",
+                                "slideOfTotal": "Slide :num of :total",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "solutionListQuestionNumber": "Question :num",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            }
+                        },
+                        "subContentId": "07d2c399-4a1b-424c-924b-1c3a240bf843",
+                        "metadata": {
+                            "contentType": "Single Choice Set",
+                            "license": "U",
+                            "title": "Single Choice Set: What did the people on the bus call you?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Single Choice Set: What did the people on the bus call you?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": "<p>Multiple Choice Question</p>\n"
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 97.47,
+                        "to": 100.47
+                    },
+                    "libraryTitle": "True/False Question",
+                    "action": {
+                        "library": "H5P.TrueFalse 1.8",
+                        "params": {
+                            "media": {
+                                "disableImageZooming": false
+                            },
+                            "correct": "false",
+                            "behaviour": {
+                                "enableRetry": true,
+                                "enableSolutionsButton": false,
+                                "enableCheckButton": true,
+                                "confirmCheckDialog": false,
+                                "confirmRetryDialog": false,
+                                "autoCheck": false
+                            },
+                            "l10n": {
+                                "trueText": "True",
+                                "falseText": "False",
+                                "score": "You got @score of @total points",
+                                "checkAnswer": "Check",
+                                "submitAnswer": "Submit",
+                                "showSolutionButton": "Show solution",
+                                "tryAgain": "Retry",
+                                "wrongAnswerMessage": "Wrong answer",
+                                "correctAnswerMessage": "Correct answer",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            },
+                            "confirmCheck": {
+                                "header": "Finish ?",
+                                "body": "Are you sure you wish to finish ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Finish"
+                            },
+                            "confirmRetry": {
+                                "header": "Retry ?",
+                                "body": "Are you sure you wish to retry ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Confirm"
+                            },
+                            "question": "<p>最後冇巴士。</p>\n\n<p>zeoi3 hau6 mou5 baa1 si2.</p>\n\n<p>In the end, there was no bus.</p>\n"
+                        },
+                        "subContentId": "de7877cb-0497-46a5-b967-bd73102f8602",
+                        "metadata": {
+                            "contentType": "True/False Question",
+                            "license": "U",
+                            "title": "True/False Question: Did a bus come?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "True/False Question: Did a bus come?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": "<p>True/False Question</p>\n"
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 118.199,
+                        "to": 120.199
+                    },
+                    "libraryTitle": "Fill in the Blanks",
+                    "action": {
+                        "library": "H5P.Blanks 1.14",
+                        "params": {
+                            "media": {
+                                "disableImageZooming": false
+                            },
+                            "text": "<p>喺空格內填上適當嘅中文字或粵拼。</p>\n\n<p>hai2 hung1 gaak3 noi6 tin4 soeng5 sik1 dong3 ge3 zung1 man4 zi6 waak6 jyut6 ping3</p>\n\n<p>Fill in the missing word(s) with Chinese characters or Jyutping.</p>\n\n<p> </p>\n",
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "showSolutions": "Show solution",
+                            "tryAgain": "Retry",
+                            "checkAnswer": "Check",
+                            "submitAnswer": "Submit",
+                            "notFilledOut": "Please fill in all blanks to view solution",
+                            "answerIsCorrect": "&#039;:ans&#039; is correct",
+                            "answerIsWrong": "&#039;:ans&#039; is wrong",
+                            "answeredCorrectly": "Answered correctly",
+                            "answeredIncorrectly": "Answered incorrectly",
+                            "solutionLabel": "Correct answer:",
+                            "inputLabel": "Blank input @num of @total",
+                            "inputHasTipLabel": "Tip available",
+                            "tipLabel": "Tip",
+                            "behaviour": {
+                                "enableRetry": true,
+                                "enableSolutionsButton": true,
+                                "enableCheckButton": true,
+                                "autoCheck": false,
+                                "caseSensitive": true,
+                                "showSolutionsRequiresInput": true,
+                                "separateLines": false,
+                                "confirmCheckDialog": false,
+                                "confirmRetryDialog": false,
+                                "acceptSpellingErrors": false
+                            },
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again.",
+                            "a11yCheckingModeHeader": "Checking mode",
+                            "confirmCheck": {
+                                "header": "Finish ?",
+                                "body": "Are you sure you wish to finish ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Finish"
+                            },
+                            "confirmRetry": {
+                                "header": "Retry ?",
+                                "body": "Are you sure you wish to retry ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Confirm"
+                            },
+                            "questions": [
+                                "<p>我冇位坐，又*孭/me1*住個大書包，唔係咁開心。</p>\n\n<p>ngo5 mou5 wei2 co5, jau6 __ zyu6 go3 daai6 syu1 baau1, m4 hai6 gam3 hoi1 sam1.</p>\n\n<p>I don't have a seat to sit at, and I have to _____ a big backpack. I'm not very happy.</p>\n"
+                            ]
+                        },
+                        "subContentId": "9a28a2f7-3d9a-4921-9483-d907643731c4",
+                        "metadata": {
+                            "contentType": "Fill in the Blanks",
+                            "license": "U",
+                            "title": "Fill in the Blanks: Carry",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Fill in the Blanks: Carry"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": "<p>Fill in the blank.</p>\n"
+                },
+                {
+                    "x": 35.46910755148741,
+                    "y": 46.78362573099415,
+                    "width": 10,
+                    "height": 10,
+                    "duration": {
+                        "from": 259,
+                        "to": 261
+                    },
+                    "libraryTitle": "Single Choice Set",
+                    "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                            "choices": [
+                                {
+                                    "subContentId": "1cad8d60-8eb7-4b78-955a-fb79851e64d0",
+                                    "question": "<p>邊個同你搭巴士?</p>\n\n<p>bin1 go3 tung4 nei5 daap3 baa1 si2?</p>\n\n<p>Who went on the bus with you?</p>\n",
+                                    "answers": [
+                                        "<p>媽媽 maa4 maa1 Mom</p>\n",
+                                        "<p>爸爸 baa4 baa1 Dad</p>\n",
+                                        "<p>婆婆 po4 po2 Grandma</p>\n",
+                                        "<p>爺爺 je4 je2 Grandpa</p>\n"
+                                    ]
+                                },
+                                {
+                                    "subContentId": "5bc780f3-9209-4077-bfeb-e95132978b13",
+                                    "question": "<p>如果架巴士唔嚟，佢哋會搭咩交通工具?</p>\n\n<p>jyu4 gwo2 gaa3 baa1 si2 m4 lai4, keoi5 dei6 wui5 daap3 me1 gaau1 tung1 gung1 geoi6?</p>\n\n<p>What transportation will they take if the bus doesn't come?</p>\n",
+                                    "answers": [
+                                        "<p>地鐵 dei6 tit3 Subway/MTR</p>\n",
+                                        "<p>船 syun4 Boat/Ferry</p>\n",
+                                        "<p>飛機 fei1 gei1 Airplane</p>\n",
+                                        "<p>單車 daan1 ce1 Bicycle</p>\n"
+                                    ]
+                                },
+                                {
+                                    "subContentId": "38316dca-524e-4ba9-9114-a841deaed3e4",
+                                    "question": "<p>邊個畀位你坐?</p>\n\n<p>bin1 go3 bei2 wai2 nei5 co5?</p>\n\n<p>Who gave up their seat for you?</p>\n",
+                                    "answers": [
+                                        "<p>叔叔 suk1 suk1 Uncle</p>\n",
+                                        "<p>姨姨 ji1 ji1 Aunt</p>\n",
+                                        "<p>同學 tung4 hok6 Schoolmate</p>\n",
+                                        "<p>朋友 pang4 jau5 Friend</p>\n"
+                                    ]
+                                },
+                                {
+                                    "subContentId": "c81568b4-1811-40f8-83bc-16a4704e94ff",
+                                    "question": "<p>你同叔叔講乜嘢？</p>\n\n<p>nei5 tung4 suk1 suk1 gong2 mat1 je5?</p>\n\n<p>What did you say to Uncle?</p>\n",
+                                    "answers": [
+                                        "<p>多謝 do1 ze6 Thank you</p>\n",
+                                        "<p>唔好意思 ng4 hou2 ji3 si3 Excuse me/Sorry</p>\n",
+                                        "<p>唔緊要 ng4 gan2 jiu3 No problem</p>\n",
+                                        "<p>好呀 hou2 aa3 Great</p>\n"
+                                    ]
+                                },
+                                {
+                                    "subContentId": "e01cd55d-2519-4747-ae4b-4ccbb2c8f22a",
+                                    "question": "<p>巴士啲人點叫你？</p>\n\n<p>baa1 si2 di1 jan4 dim2 giu3 nei5?</p>\n\n<p>What did the people on the bus call you?</p>\n",
+                                    "answers": [
+                                        "<p>叻女 lek1 neoi2 Good girl</p>\n",
+                                        "<p>叻仔 lek1 zai2 Good boy</p>\n",
+                                        "<p>靚仔 leng3 zai2 Pretty boy</p>\n",
+                                        "<p>靚女 leng3 neoi2 Pretty girl</p>\n"
+                                    ]
+                                }
+                            ],
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "behaviour": {
+                                "autoContinue": true,
+                                "timeoutCorrect": 2000,
+                                "timeoutWrong": 3000,
+                                "soundEffectsEnabled": true,
+                                "enableRetry": false,
+                                "enableSolutionsButton": false,
+                                "passPercentage": 70
+                            },
+                            "l10n": {
+                                "nextButtonLabel": "Next question",
+                                "showSolutionButtonLabel": "Show solution",
+                                "retryButtonLabel": "Retry",
+                                "solutionViewTitle": "Solution list",
+                                "correctText": "Correct!",
+                                "incorrectText": "Incorrect!",
+                                "muteButtonLabel": "Mute feedback sound",
+                                "closeButtonLabel": "Close",
+                                "slideOfTotal": "Slide :num of :total",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "solutionListQuestionNumber": "Question :num",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            }
+                        },
+                        "subContentId": "09e95f35-538f-4b3c-af0b-10a4aa4dde59",
+                        "metadata": {
+                            "contentType": "Single Choice Set",
+                            "license": "U",
+                            "title": "Speed Reading",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Speed Reading"
+                        }
+                    },
+                    "pause": false,
+                    "displayType": "button",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": "<p>Speed Reading Questions</p>\n"
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 254.408,
+                        "to": 256.408
+                    },
+                    "libraryTitle": "Multiple Choice",
+                    "action": {
+                        "library": "H5P.MultiChoice 1.16",
+                        "params": {
+                            "media": {
+                                "disableImageZooming": false
+                            },
+                            "answers": [
+                                {
+                                    "correct": true,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>我 ngo5 Me</div>\n"
+                                },
+                                {
+                                    "correct": true,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>媽媽 maa4 maa1 Mom</div>\n"
+                                },
+                                {
+                                    "correct": false,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>爸爸 baa4 baa1 Dad</div>\n"
+                                },
+                                {
+                                    "correct": false,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>朋友 pang4 jau5 Friend</div>\n"
+                                },
+                                {
+                                    "correct": true,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>叔叔 suk1 suk1 Uncle</div>\n"
+                                },
+                                {
+                                    "correct": false,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>姨姨 ji1 ji1 Aunt</div>\n"
+                                },
+                                {
+                                    "correct": false,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>同學 tung4 hok6 Schoolmate</div>\n"
+                                },
+                                {
+                                    "correct": true,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>婆婆 po4 po2 Grandma</div>\n"
+                                },
+                                {
+                                    "correct": false,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>爺爺 je4 je2 Grandpa</div>\n"
+                                },
+                                {
+                                    "correct": false,
+                                    "tipsAndFeedback": {
+                                        "tip": "",
+                                        "chosenFeedback": "",
+                                        "notChosenFeedback": ""
+                                    },
+                                    "text": "<div>老師 lou5 si1 Teacher</div>\n"
+                                }
+                            ],
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "behaviour": {
+                                "enableRetry": true,
+                                "enableSolutionsButton": true,
+                                "enableCheckButton": true,
+                                "type": "auto",
+                                "singlePoint": false,
+                                "randomAnswers": true,
+                                "showSolutionsRequiresInput": true,
+                                "confirmCheckDialog": false,
+                                "confirmRetryDialog": false,
+                                "autoCheck": false,
+                                "passPercentage": 100,
+                                "showScorePoints": true
+                            },
+                            "UI": {
+                                "checkAnswerButton": "Check",
+                                "submitAnswerButton": "Submit",
+                                "showSolutionButton": "Show solution",
+                                "tryAgainButton": "Retry",
+                                "tipsLabel": "Show tip",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "tipAvailable": "Tip available",
+                                "feedbackAvailable": "Feedback available",
+                                "readFeedback": "Read feedback",
+                                "wrongAnswer": "Wrong answer",
+                                "correctAnswer": "Correct answer",
+                                "shouldCheck": "Should have been checked",
+                                "shouldNotCheck": "Should not have been checked",
+                                "noInput": "Please answer before viewing the solution",
+                                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                            },
+                            "confirmCheck": {
+                                "header": "Finish ?",
+                                "body": "Are you sure you wish to finish ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Finish"
+                            },
+                            "confirmRetry": {
+                                "header": "Retry ?",
+                                "body": "Are you sure you wish to retry ?",
+                                "cancelLabel": "Cancel",
+                                "confirmLabel": "Confirm"
+                            },
+                            "question": "<p>故事入面，有邊個搭巴士？</p>\n\n<p>gu3 si6 jap6 min6, jau5 bin1 go3 daap3 baa1 si2?</p>\n\n<p>Who took the bus in the story?</p>\n"
+                        },
+                        "subContentId": "1371435b-5fdc-49b0-bbd1-3b8c3e470969",
+                        "metadata": {
+                            "contentType": "Multiple Choice",
+                            "license": "U",
+                            "title": "Multiple Choice: Who took the bus?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Multiple Choice: Who took the bus?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.494286348318848,
+                    "duration": {
+                        "from": 177.86,
+                        "to": 179.86
+                    },
+                    "libraryTitle": "Drag and Drop",
+                    "action": {
+                        "library": "H5P.DragQuestion 1.14",
+                        "params": {
+                            "scoreShow": "Check",
+                            "submit": "Submit",
+                            "tryAgain": "Retry",
+                            "scoreExplanation": "Correct answers give +1 point. Incorrect answers give -1 point. The lowest possible score is 0.",
+                            "question": {
+                                "settings": {
+                                    "size": {
+                                        "width": 620,
+                                        "height": 310
+                                    }
+                                },
+                                "task": {
+                                    "elements": [
+                                        {
+                                            "x": 77.41935483870968,
+                                            "y": 19.35483870967742,
+                                            "width": 5,
+                                            "height": 5,
+                                            "dropZones": [
+                                                "0",
+                                                "1",
+                                                "2"
+                                            ],
+                                            "type": {
+                                                "library": "H5P.AdvancedText 1.1",
+                                                "params": {
+                                                    "text": "<p>叔叔</p>\n\n<p>suk1 suk1</p>\n\n<p>Uncle</p>\n"
+                                                },
+                                                "subContentId": "8fe08496-15f8-499f-8142-67f0088741a4",
+                                                "metadata": {
+                                                    "contentType": "Text",
+                                                    "license": "U",
+                                                    "title": "Untitled Text",
+                                                    "authors": [],
+                                                    "changes": []
+                                                }
+                                            },
+                                            "backgroundOpacity": 100,
+                                            "multiple": false
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 18.70967741935484,
+                                            "width": 11.0753475,
+                                            "height": 5,
+                                            "dropZones": [
+                                                "1",
+                                                "0",
+                                                "2"
+                                            ],
+                                            "type": {
+                                                "library": "H5P.AdvancedText 1.1",
+                                                "params": {
+                                                    "text": "<p>媽媽同我</p>\n\n<p>maa4 maa1 tung4 ngo5</p>\n\n<p>Mom and me</p>\n"
+                                                },
+                                                "subContentId": "8cedc703-1225-4271-a266-2dd2f9fac3c5",
+                                                "metadata": {
+                                                    "contentType": "Text",
+                                                    "license": "U",
+                                                    "title": "Untitled Text",
+                                                    "authors": [],
+                                                    "changes": []
+                                                }
+                                            },
+                                            "backgroundOpacity": 100,
+                                            "multiple": false
+                                        },
+                                        {
+                                            "x": 43.064516129032256,
+                                            "y": 18.387096774193548,
+                                            "width": 5,
+                                            "height": 5,
+                                            "dropZones": [
+                                                "2",
+                                                "0",
+                                                "1"
+                                            ],
+                                            "type": {
+                                                "library": "H5P.AdvancedText 1.1",
+                                                "params": {
+                                                    "text": "<p>婆婆</p>\n\n<p>po4 po2</p>\n\n<p>Grandma</p>\n"
+                                                },
+                                                "subContentId": "75cba841-4f68-47c5-bff6-135bfbb27cf6",
+                                                "metadata": {
+                                                    "contentType": "Text",
+                                                    "license": "U",
+                                                    "title": "Untitled Text",
+                                                    "authors": [],
+                                                    "changes": []
+                                                }
+                                            },
+                                            "backgroundOpacity": 100,
+                                            "multiple": false
+                                        }
+                                    ],
+                                    "dropZones": [
+                                        {
+                                            "x": 0,
+                                            "y": 67.74193548387096,
+                                            "width": 12.5,
+                                            "height": 6.25,
+                                            "correctElements": [
+                                                "0"
+                                            ],
+                                            "showLabel": true,
+                                            "backgroundOpacity": 100,
+                                            "tipsAndFeedback": {
+                                                "tip": ""
+                                            },
+                                            "single": true,
+                                            "autoAlign": true,
+                                            "label": "<div>第一 dai6 jat1 First</div>\n",
+                                            "type": {
+                                                "library": "H5P.DragQuestionDropzone 0.1"
+                                            }
+                                        },
+                                        {
+                                            "x": 33.87096774193548,
+                                            "y": 67.74193548387096,
+                                            "width": 12.5,
+                                            "height": 6.25,
+                                            "correctElements": [
+                                                "1"
+                                            ],
+                                            "showLabel": true,
+                                            "backgroundOpacity": 100,
+                                            "tipsAndFeedback": {
+                                                "tip": ""
+                                            },
+                                            "single": true,
+                                            "autoAlign": true,
+                                            "label": "<div>第二 dai6 ji6 Second</div>\n",
+                                            "type": {
+                                                "library": "H5P.DragQuestionDropzone 0.1"
+                                            }
+                                        },
+                                        {
+                                            "x": 67.74193548387096,
+                                            "y": 67.74193548387096,
+                                            "width": 12.5,
+                                            "height": 6.25,
+                                            "correctElements": [
+                                                "2"
+                                            ],
+                                            "showLabel": true,
+                                            "backgroundOpacity": 100,
+                                            "tipsAndFeedback": {
+                                                "tip": ""
+                                            },
+                                            "single": true,
+                                            "autoAlign": true,
+                                            "label": "<div>第三 dai6 saam1 Third</div>\n",
+                                            "type": {
+                                                "library": "H5P.DragQuestionDropzone 0.1"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "overallFeedback": [
+                                {
+                                    "from": 0,
+                                    "to": 100
+                                }
+                            ],
+                            "behaviour": {
+                                "enableRetry": true,
+                                "enableCheckButton": true,
+                                "singlePoint": false,
+                                "applyPenalties": true,
+                                "enableScoreExplanation": true,
+                                "dropZoneHighlighting": "dragging",
+                                "autoAlignSpacing": 2,
+                                "enableFullScreen": false,
+                                "showScorePoints": true,
+                                "showTitle": true
+                            },
+                            "grabbablePrefix": "Grabbable {num} of {total}.",
+                            "grabbableSuffix": "Placed in dropzone {num}.",
+                            "dropzonePrefix": "Dropzone {num} of {total}.",
+                            "noDropzone": "No dropzone.",
+                            "tipLabel": "Show tip.",
+                            "tipAvailable": "Tip available",
+                            "correctAnswer": "Correct answer",
+                            "wrongAnswer": "Wrong answer",
+                            "feedbackHeader": "Feedback",
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "scoreExplanationButtonLabel": "Show score explanation",
+                            "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again.",
+                            "localize": {
+                                "fullscreen": "Fullscreen",
+                                "exitFullscreen": "Exit fullscreen"
+                            }
+                        },
+                        "subContentId": "9f517670-7a5d-4e59-99a6-0099d4413351",
+                        "metadata": {
+                            "contentType": "Drag and Drop",
+                            "license": "U",
+                            "title": "拖放：佢哋以乜嘢次序上巴士？to1 fong3: keoi5 dei6 ji5 mat1 je5 ci3 zeoi6 soeng5 baa1 si2? Drag and Drop: In what order did these people get on the bus?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "拖放：佢哋以乜嘢次序上巴士？to1 fong3: keoi5 dei6 ji5 mat1 je5 ci3 zeoi6 soeng5 baa1 si2? Drag and Drop: In what order did these people get on the bus?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "adaptivity": {
+                        "correct": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "wrong": {
+                            "allowOptOut": false,
+                            "message": ""
+                        },
+                        "requireCompletion": false
+                    },
+                    "label": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.48970722781336,
+                    "duration": {
+                        "from": 256,
+                        "to": 258
+                    },
+                    "libraryTitle": "Free Text Question",
+                    "action": {
+                        "library": "H5P.FreeTextQuestion 1.0",
+                        "params": {
+                            "placeholder": "巴士，飛機，船，的士，地鐵，行路; baa1 si2, fei1 gei1, syun4, dik1 si2, dei6 tit3, haang4 lou6; bus, airplane, ship, taxi, Subway/MTR, walking",
+                            "maxScore": 1,
+                            "isRequired": false,
+                            "i10n": {
+                                "requiredText": "required",
+                                "requiredMessage": "This question requires an answer",
+                                "skipButtonLabel": "Skip Question",
+                                "submitButtonLabel": "Answer and proceed",
+                                "language": "en"
+                            },
+                            "question": "你點樣返學? 邊個同你一齊返學? nei5 dim2 joeng2 faan1 hok6? bin1 go3 tung4 nei5 jat1 cai4 faan1 hok6? How do you go to school? Who do you go with?"
+                        },
+                        "subContentId": "43702aec-2e63-4355-a002-4f8abc78442f",
+                        "metadata": {
+                            "contentType": "Free Text Question",
+                            "license": "U",
+                            "title": "Free Text Question: How do you usually get to school and who do you go with?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Free Text Question: How do you usually get to school and who do you go with?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "label": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 22.48970722781336,
+                    "duration": {
+                        "from": 253,
+                        "to": 255
+                    },
+                    "libraryTitle": "Free Text Question",
+                    "action": {
+                        "library": "H5P.FreeTextQuestion 1.0",
+                        "params": {
+                            "placeholder": "十五分鐘; sap6 ng5 fan2 zung1; 15 minutes",
+                            "maxScore": 1,
+                            "isRequired": false,
+                            "i10n": {
+                                "requiredText": "required",
+                                "requiredMessage": "This question requires an answer",
+                                "skipButtonLabel": "Skip Question",
+                                "submitButtonLabel": "Answer and proceed",
+                                "language": "en"
+                            },
+                            "question": "由你屋企到學校需要幾長時間？jau4 nei5 uk1 kei5 dou3 hok6 haau6 seoi1 jiu3 gei2 coeng4 si4 gaan3? How long does it take to get from your house to school?"
+                        },
+                        "subContentId": "faacd56b-e3ce-4182-a704-f7bf99a8d6c3",
+                        "metadata": {
+                            "contentType": "Free Text Question",
+                            "license": "U",
+                            "title": "Free Text Question: How long does it take to get from your house to school?",
+                            "authors": [],
+                            "changes": [],
+                            "extraTitle": "Free Text Question: How long does it take to get from your house to school?"
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "label": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 19.213973799126638,
+                    "duration": {
+                        "from": 1,
+                        "to": 1
+                    },
+                    "libraryTitle": "Text",
+                    "action": {
+                        "library": "H5P.Text 1.1",
+                        "params": {
+                            "text": "<p>This is some text that you can display without any interaction</p>\n\n<p>You can give instructions, add copyright notices etc.</p>\n"
+                        },
+                        "subContentId": "22bb6006-fead-45d0-bbd3-be19d36c7507",
+                        "metadata": {
+                            "contentType": "Text",
+                            "license": "U",
+                            "title": "Untitled Text",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "visuals": {
+                        "backgroundColor": "rgb(255, 255, 255)",
+                        "boxShadow": true
+                    },
+                    "goto": {
+                        "url": {
+                            "protocol": "http://"
+                        },
+                        "visualize": false,
+                        "type": "timecode",
+                        "time": 1
+                    },
+                    "label": ""
+                },
+                {
+                    "x": 0,
+                    "y": 85.3954391072295,
+                    "width": 40,
+                    "height": 3.274585152838428,
+                    "duration": {
+                        "from": 1,
+                        "to": 1
+                    },
+                    "libraryTitle": "Text",
+                    "action": {
+                        "library": "H5P.Text 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\"><strong>Click here to continue video</strong></p>\n"
+                        },
+                        "subContentId": "8ce966b0-1423-4b52-bf64-5c21a05c6a2c",
+                        "metadata": {
+                            "contentType": "Text",
+                            "license": "U",
+                            "title": "Untitled Text",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "pause": true,
+                    "displayType": "poster",
+                    "buttonOnMobile": false,
+                    "visuals": {
+                        "backgroundColor": "rgb(182, 215, 168)",
+                        "boxShadow": false
+                    },
+                    "goto": {
+                        "url": {
+                            "protocol": "http://"
+                        },
+                        "visualize": true,
+                        "type": "timecode",
+                        "time": 1
+                    },
+                    "label": "<p style=\"text-align:center\">Click here to continue video</p>\n"
+                }
+            ],
+            "bookmarks": [],
+            "endscreens": [
+                {
+                    "time": 262,
+                    "label": "4:22 Submit screen"
+                }
+            ]
+        },
+        "summary": {
+            "task": {
+                "library": "H5P.Summary 1.10",
+                "params": {
+                    "intro": "Choose the correct statement.",
+                    "summaries": [
+                        {
+                            "subContentId": "daa4c6b9-3cc5-4e8d-b50e-a515faaf8067",
+                            "tip": ""
+                        }
+                    ],
+                    "overallFeedback": [
+                        {
+                            "from": 0,
+                            "to": 100
+                        }
+                    ],
+                    "solvedLabel": "Progress:",
+                    "scoreLabel": "Wrong answers:",
+                    "resultLabel": "Your result",
+                    "labelCorrect": "Correct.",
+                    "labelIncorrect": "Incorrect! Please try again.",
+                    "alternativeIncorrectLabel": "Incorrect",
+                    "labelCorrectAnswers": "Correct answers.",
+                    "tipButtonLabel": "Show tip",
+                    "scoreBarLabel": "You got :num out of :total points",
+                    "progressText": "Progress :num of :total"
+                },
+                "subContentId": "71e06ddb-f580-4e94-b3e0-9849f6238108",
+                "metadata": {
+                    "contentType": "Summary",
+                    "license": "U",
+                    "title": "Untitled Summary",
+                    "authors": [],
+                    "changes": [],
+                    "extraTitle": "Untitled Summary"
+                }
+            },
+            "displayAt": 3
+        }
+    },
+    "override": {
+        "autoplay": true,
+        "loop": false,
+        "showBookmarksmenuOnLoad": false,
+        "showRewind10": true,
+        "preventSkipping": false,
+        "deactivateSound": false
+    },
+    "l10n": {
+        "interaction": "Interaction",
+        "play": "Play",
+        "pause": "Pause",
+        "mute": "Mute, currently unmuted",
+        "unmute": "Unmute, currently muted",
+        "quality": "Video Quality",
+        "captions": "Captions",
+        "close": "Close",
+        "fullscreen": "Fullscreen",
+        "exitFullscreen": "Exit Fullscreen",
+        "summary": "Open summary dialog",
+        "bookmarks": "Bookmarks",
+        "endscreen": "Submit screen",
+        "defaultAdaptivitySeekLabel": "Continue",
+        "continueWithVideo": "Continue with video",
+        "playbackRate": "Playback Rate",
+        "rewind10": "Rewind 10 Seconds",
+        "navDisabled": "Navigation is disabled",
+        "sndDisabled": "Sound is disabled",
+        "requiresCompletionWarning": "You need to answer all the questions correctly before continuing.",
+        "back": "Back",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds",
+        "currentTime": "Current time:",
+        "totalTime": "Total time:",
+        "singleInteractionAnnouncement": "Interaction appeared:",
+        "multipleInteractionsAnnouncement": "Multiple interactions appeared.",
+        "videoPausedAnnouncement": "Video is paused",
+        "content": "Content",
+        "answered": "@answered answered",
+        "endcardTitle": "@answered Question(s) answered",
+        "endcardInformation": "You have answered @answered questions, click below to submit your answers.",
+        "endcardInformationOnSubmitButtonDisabled": "You have answered @answered questions.",
+        "endcardInformationNoAnswers": "You have not answered any questions.",
+        "endcardInformationMustHaveAnswer": "You have to answer at least one question before you can submit your answers.",
+        "endcardSubmitButton": "Submit Answers",
+        "endcardSubmitMessage": "Your answers have been submitted!",
+        "endcardTableRowAnswered": "Answered questions",
+        "endcardTableRowScore": "Score",
+        "endcardAnsweredScore": "answered",
+        "endCardTableRowSummaryWithScore": "You got @score out of @total points for the @question that appeared after @minutes minutes and @seconds seconds.",
+        "endCardTableRowSummaryWithoutScore": "You have answered the @question that appeared after @minutes minutes and @seconds seconds."
+    }
+}

@@ -1,3 +1,4 @@
+import { BaseTemplate } from '../templates/BaseTemplate';
 import { toSeconds } from '../helpers/timecode';
 
 export default abstract class InteractiveVideoInteraction {
@@ -9,8 +10,11 @@ export default abstract class InteractiveVideoInteraction {
     public correctTime?: number;
     public incorrectText?: string;
     public incorrectTime?: number;
+    public title?: string;
+    public template: BaseTemplate;
 
     public readRow(row: string[]) {
+        this.title = row[3].trim();
         this.start = toSeconds(row[0]);
         const length = Number.parseInt(row[1].replace(' s', '').trim());
         this.end = this.start + length;
