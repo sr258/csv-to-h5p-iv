@@ -1,3 +1,4 @@
+import { IContentMetadata } from '@lumieducation/h5p-server';
 import InteractiveVideoTemplate from '../templates/InteractiveVideoTemplate';
 import InteractiveVideoInteraction from './InteractiveVideoInteraction';
 import { createInteractiveVideoInteractionFromRow } from './InteractiveVideoInteractionFactory';
@@ -46,5 +47,29 @@ export default class InteractiveVideo {
 
     public generateParameters(): any {
         return this.template(this);
+    }
+
+    public generateMetadata(): {
+        metadata: IContentMetadata;
+        mainLibraryUbername: string;
+    } {
+        return {
+            metadata: {
+                embedTypes: ['div'],
+                language: 'en',
+                title: this.title,
+                mainLibrary: 'H5P.InteractiveVideo',
+                license: 'U',
+                defaultLanguage: 'en',
+                preloadedDependencies: [
+                    {
+                        machineName: 'H5P.InteractiveVideo',
+                        majorVersion: 1,
+                        minorVersion: 24
+                    }
+                ]
+            },
+            mainLibraryUbername: 'H5P.InteractiveVideo 1.24'
+        };
     }
 }

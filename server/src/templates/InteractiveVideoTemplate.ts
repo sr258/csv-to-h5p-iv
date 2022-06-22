@@ -31,7 +31,7 @@ export default (data: InteractiveVideo) => ({
             ]
         },
         assets: {
-            interactions: data.interactions.flatMap((i) => i.template(i)),
+            interactions: data.interactions.map((i) => i.template(i)).flat(2),
             bookmarks: [],
             endscreens: [
                 {
