@@ -1,17 +1,11 @@
-import { ILibraryStorage, LibraryName } from '@lumieducation/h5p-server';
-import { createUUID } from 'src/helpers/uuid';
-
+import { createUUID } from '../helpers/uuid';
 import InteractiveVideoInteraction from '../content-types/InteractiveVideoInteraction';
+import { BaseTemplate } from './BaseTemplate';
 
-export default async (
+export default (
     data: InteractiveVideoInteraction,
-    libStorage: ILibraryStorage
+    paramsTemplate: BaseTemplate
 ) => {
-    const libraryTitle = (
-        await libStorage.getLibrary(
-            LibraryName.fromUberName(data.type, { useWhitespace: true })
-        )
-    ).title;
     return [
         {
             x: 0,
@@ -22,18 +16,18 @@ export default async (
                 from: data.start,
                 to: data.end
             },
-            libraryTitle: libraryTitle,
+            libraryTitle: data.libraryTitle,
             action: {
                 library: data.type,
-                params: data.template(data, libStorage),
+                params: paramsTemplate(data),
                 subContentId: createUUID(),
                 metadata: {
-                    contentType: libraryTitle,
+                    contentType: data.libraryTitle,
                     license: 'U',
-                    title: `${libraryTitle}: ${data.title}`,
+                    title: `${data.libraryTitle}: ${data.title}`,
                     authors: [],
                     changes: [],
-                    extraTitle: `${libraryTitle}: ${data.title}`
+                    extraTitle: `${data.libraryTitle}: ${data.title}`
                 }
             },
             pause: true,
@@ -42,11 +36,13 @@ export default async (
             adaptivity: {
                 correct: {
                     allowOptOut: false,
-                    message: data.correctText
+                    message: data.correctText,
+                    seekTo: data.correctTime
                 },
                 wrong: {
                     allowOptOut: false,
-                    message: data.incorrectText
+                    message: data.incorrectText,
+                    seekTo: data.incorrectTime
                 },
                 requireCompletion: false
             },

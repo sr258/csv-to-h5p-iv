@@ -2,7 +2,7 @@ import { BaseTemplate } from '../templates/BaseTemplate';
 import { toSeconds } from '../helpers/timecode';
 
 export default abstract class InteractiveVideoInteraction {
-    protected constructor(public type: string) {}
+    protected constructor(public type: string, public libraryTitle) {}
 
     public start: number;
     public end: number;
@@ -11,7 +11,7 @@ export default abstract class InteractiveVideoInteraction {
     public incorrectText?: string;
     public incorrectTime?: number;
     public title?: string;
-    public template: BaseTemplate;
+    public template: BaseTemplate = () => ({});
 
     public readRow(row: string[]) {
         this.title = row[3].trim();

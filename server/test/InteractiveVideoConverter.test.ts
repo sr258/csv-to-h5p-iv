@@ -16,4 +16,16 @@ describe('Interactive Video Converter', () => {
         );
         expect(result).toMatchSnapshot();
     });
+
+    it('can create IV', async () => {
+        // prepare
+        const converter = await InteractiveVideoConverter.create();
+        const result1 = await converter.parse(
+            path.join(__dirname, './__fixtures__/file2.csv')
+        );
+
+        // test
+        const result2 = result1.generateParameters();
+        expect(result2).toMatchSnapshot();
+    });
 });

@@ -3,7 +3,7 @@ import DragQuestion from './DragQuestion';
 import DragText from './DragText';
 import FreeTextQuestion from './FreeTextQuestion';
 import SingleChoiceSet from './FreeTextQuestion';
-import MultipleChoice from './MultipleChoice';
+import MultiChoice from './MultiChoice';
 import TrueFalse from './TrueFalse';
 import Text from './Text';
 import InteractiveVideoInteraction from './InteractiveVideoInteraction';
@@ -35,7 +35,7 @@ export const createInteractiveVideoInteractionFromRow = (
             interaction = new FreeTextQuestion();
             break;
         case 'multiple choice':
-            interaction = new MultipleChoice();
+            interaction = new MultiChoice();
             break;
         case 'text':
             interaction = new Text();

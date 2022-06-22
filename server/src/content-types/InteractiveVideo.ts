@@ -1,3 +1,4 @@
+import InteractiveVideoTemplate from '../templates/InteractiveVideoTemplate';
 import InteractiveVideoInteraction from './InteractiveVideoInteraction';
 import { createInteractiveVideoInteractionFromRow } from './InteractiveVideoInteractionFactory';
 
@@ -5,6 +6,7 @@ export default class InteractiveVideo {
     public title: string;
     public mediaLink: string;
     public interactions: InteractiveVideoInteraction[];
+    public template = InteractiveVideoTemplate;
 
     public static fromCsvRows(rows: string[][]): InteractiveVideo {
         const iv = new InteractiveVideo();
@@ -43,6 +45,6 @@ export default class InteractiveVideo {
     }
 
     public generateParameters(): any {
-        return 
+        return this.template(this);
     }
 }

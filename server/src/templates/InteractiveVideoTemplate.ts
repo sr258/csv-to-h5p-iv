@@ -4,7 +4,7 @@ import { createUUID } from '../helpers/uuid';
 import InteractiveVideo from '../content-types/InteractiveVideo';
 import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 
-export default (data: InteractiveVideo, libStorage: ILibraryStorage) => ({
+export default (data: InteractiveVideo) => ({
     interactiveVideo: {
         video: {
             startScreenOptions: {
@@ -31,9 +31,7 @@ export default (data: InteractiveVideo, libStorage: ILibraryStorage) => ({
             ]
         },
         assets: {
-            interactions: data.interactions.flatMap((i) =>
-                InteractiveVideoInteractionTemplate(i, libStorage)
-            ),
+            interactions: data.interactions.flatMap((i) => i.template(i)),
             bookmarks: [],
             endscreens: [
                 {

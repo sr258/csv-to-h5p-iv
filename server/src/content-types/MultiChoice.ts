@@ -1,8 +1,10 @@
+import { BaseTemplate } from '../templates/BaseTemplate';
+import MultiChoiceTemplate from '../templates/MultiChoiceTemplate';
 import InteractiveVideoInteraction from './InteractiveVideoInteraction';
 
-export default class MultipleChoice extends InteractiveVideoInteraction {
+export default class MultiChoice extends InteractiveVideoInteraction {
     constructor() {
-        super('MultipleChoice');
+        super('H5P.MultiChoice 1.16', 'Multiple Choice');
     }
 
     public question: string;
@@ -10,6 +12,7 @@ export default class MultipleChoice extends InteractiveVideoInteraction {
         text: string;
         correct: boolean;
     }[];
+    public template: BaseTemplate = MultiChoiceTemplate;
 
     public readRow(row: string[]) {
         super.readRow(row);

@@ -2,7 +2,7 @@ import InteractiveVideoInteraction from './InteractiveVideoInteraction';
 
 export default class DragQuestion extends InteractiveVideoInteraction {
     constructor() {
-        super('DragQuestion');
+        super('H5P.DragQuestion 1.14', 'Drag and Drop');
     }
 
     public taskDescription: string;
