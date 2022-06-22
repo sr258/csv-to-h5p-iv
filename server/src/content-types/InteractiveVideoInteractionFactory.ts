@@ -2,7 +2,7 @@ import Blanks from './Blanks';
 import DragQuestion from './DragQuestion';
 import DragText from './DragText';
 import FreeTextQuestion from './FreeTextQuestion';
-import SingleChoiceSet from './FreeTextQuestion';
+import SingleChoiceSet from './SingleChoiceSet';
 import MultiChoice from './MultiChoice';
 import TrueFalse from './TrueFalse';
 import Text from './Text';

@@ -4,7 +4,7 @@ import InteractiveVideoInteraction from './InteractiveVideoInteraction';
 
 export default class DragText extends InteractiveVideoInteraction {
     constructor() {
-        super('H5P.DragText 1.10', 'Drag the Word');
+        super('H5P.DragText 1.10', 'Drag the Words');
     }
 
     public taskDescription: string;
