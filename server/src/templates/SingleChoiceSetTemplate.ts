@@ -3,13 +3,11 @@ import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTe
 import { createUUID } from '../helpers/uuid';
 
 const template = (data: SingleChoiceSet) => ({
-    choices: [
-        {
-            subContentId: createUUID(),
-            question: data.question,
-            answers: data.options
-        }
-    ],
+    choices: data.questions.map((q) => ({
+        subContentId: createUUID(),
+        question: q.question,
+        answers: q.options
+    })),
     overallFeedback: [
         {
             from: 0,
