@@ -52,6 +52,14 @@ app.post('/convert', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`csv-to-h5p-iv running on http://localhost:${port}`);
+    console.log(`CSV to H5P Interactive Video Converter`);
+    console.log('--------------------------------------');
+    console.log(
+        `The converter is running. Open your browser and navigate to http://localhost:${port}`
+    );
+    console.log('Leave this window open until you are finished.');
+    console.log(
+        'Once you are finished, you can close the window by a) clicking into it b) pressing Ctrl + C on the keyboard.'
+    );
     open(`http://localhost:${port}`);
 });
