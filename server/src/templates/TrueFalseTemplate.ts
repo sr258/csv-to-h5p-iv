@@ -7,7 +7,7 @@ const template = (data: TrueFalse) => ({
     },
     correct: data.answer ? 'true' : 'false',
     behaviour: {
-        enableRetry: true,
+        enableRetry: false,
         enableSolutionsButton: false,
         enableCheckButton: true,
         confirmCheckDialog: false,

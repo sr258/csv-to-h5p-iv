@@ -61,5 +61,7 @@ app.listen(port, () => {
     console.log(
         'Once you are finished, you can close the window by a) clicking into it b) pressing Ctrl + C on the keyboard.'
     );
-    open(`http://localhost:${port}`);
+    if (!isDev) {
+        open(`http://localhost:${port}`);
+    }
 });

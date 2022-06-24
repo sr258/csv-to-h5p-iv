@@ -1,5 +1,4 @@
 import papa from 'papaparse';
-import fs from 'fs/promises';
 import { Writable } from 'stream';
 
 import Converter from './Converter';

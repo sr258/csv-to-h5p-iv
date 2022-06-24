@@ -45,6 +45,7 @@ export default class InteractiveVideo {
         return iv;
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     public generateParameters(): any {
         return this.template(this);
     }

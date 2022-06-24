@@ -1,8 +1,6 @@
-import { ILibraryStorage } from '@lumieducation/h5p-server';
 
 import { createUUID } from '../helpers/uuid';
 import InteractiveVideo from '../content-types/InteractiveVideo';
-import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 
 export default (data: InteractiveVideo) => ({
     interactiveVideo: {
