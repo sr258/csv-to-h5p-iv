@@ -6,23 +6,36 @@ import User from '../src/User';
 import InteractiveVideoConverter from '../src/InteractiveVideoConverter';
 
 describe('Interactive Video Converter', () => {
+    let file2Fixture: string;
+
+    beforeEach(async () => {
+        try {
+            file2Fixture = await fs.readFile(
+                path.join(__dirname, './__fixtures__/file2.csv'),
+                {
+                    encoding: 'utf-8'
+                }
+            );
+        } catch (error) {
+            throw new Error(
+                `There was an error while reading the file __fixtures__/file2.csv: ${error.message}`
+            );
+        }
+    });
+
     it('initializes and can parse csv', async () => {
         // prepare
         const converter = await InteractiveVideoConverter.create();
 
         // test
-        const result = await converter.parse(
-            path.join(__dirname, './__fixtures__/file2.csv')
-        );
+        const result = await converter.parse(file2Fixture);
         expect(result).toMatchSnapshot();
     });
 
     it('can create IV', async () => {
         // prepare
         const converter = await InteractiveVideoConverter.create();
-        const result1 = await converter.parse(
-            path.join(__dirname, './__fixtures__/file2.csv')
-        );
+        const result1 = await converter.parse(file2Fixture);
 
         // test
         const result2 = result1.generateParameters();
@@ -32,9 +45,7 @@ describe('Interactive Video Converter', () => {
     it('can save IV', async () => {
         // prepare
         const converter = await InteractiveVideoConverter.create();
-        const result1 = await converter.parse(
-            path.join(__dirname, './__fixtures__/file2.csv')
-        );
+        const result1 = await converter.parse(file2Fixture);
         const params = result1.generateParameters();
         const { metadata, mainLibraryUbername } = result1.generateMetadata();
 
@@ -73,9 +84,7 @@ describe('Interactive Video Converter', () => {
     it('can save IV to disk', async () => {
         // prepare
         const converter = await InteractiveVideoConverter.create();
-        const result1 = await converter.parse(
-            path.join(__dirname, './__fixtures__/file2.csv')
-        );
+        const result1 = await converter.parse(file2Fixture);
         const params = result1.generateParameters();
         const { metadata, mainLibraryUbername } = result1.generateMetadata();
 

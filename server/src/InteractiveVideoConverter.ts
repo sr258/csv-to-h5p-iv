@@ -1,8 +1,10 @@
 import papa from 'papaparse';
 import fs from 'fs/promises';
+import { Writable } from 'stream';
 
 import Converter from './Converter';
 import InteractiveVideo from './content-types/InteractiveVideo';
+import User from './User';
 
 export default class InteractiveVideoConverter extends Converter {
     public static create = async (): Promise<InteractiveVideoConverter> => {
@@ -11,18 +13,8 @@ export default class InteractiveVideoConverter extends Converter {
         return converter;
     };
 
-    public parse = async (csvFile: string) => {
-        let unparsedCsv: string;
-        try {
-            unparsedCsv = await fs.readFile(csvFile, {
-                encoding: 'utf-8'
-            });
-        } catch (error) {
-            throw new Error(
-                `There was an error while reading the file ${csvFile}: ${error.message}`
-            );
-        }
-        const parsedCsv = papa.parse(unparsedCsv, {
+    public parse = async (csvText: string) => {
+        const parsedCsv = papa.parse(csvText, {
             header: false,
             delimiter: ';',
             skipEmptyLines: true
@@ -46,5 +38,29 @@ export default class InteractiveVideoConverter extends Converter {
         );
 
         return InteractiveVideo.fromCsvRows(data as string[][]);
+    };
+
+    public writeToWritable = async (
+        iv: InteractiveVideo,
+        writable: Writable
+    ) => {
+        const params = iv.generateParameters();
+        const { metadata, mainLibraryUbername } = iv.generateMetadata();
+
+        const contentId = await this.h5pEditor.saveOrUpdateContent(
+            undefined,
+            params,
+            metadata,
+            mainLibraryUbername,
+            new User()
+        );
+        const packageFinishedPromise = new Promise<void>((resolve) => {
+            writable.on('close', () => {
+                resolve();
+            });
+        });
+        await this.h5pEditor.exportContent(contentId, writable, new User());
+        await packageFinishedPromise;
+        await this.h5pEditor.deleteContent(contentId, new User());
     };
 }

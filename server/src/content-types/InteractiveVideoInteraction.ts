@@ -11,7 +11,7 @@ export default abstract class InteractiveVideoInteraction {
     public incorrectText?: string;
     public incorrectTime?: number;
     public title?: string;
-    public template: BaseTemplate = () => ({});
+    public template: BaseTemplate = () => undefined;
 
     public readRow(row: string[]) {
         this.title = row[3].trim();

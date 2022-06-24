@@ -850,6 +850,7 @@ InteractiveVideo {
       "end": 24.882,
       "incorrectText": "Try again",
       "incorrectTime": undefined,
+      "libraryTitle": "Drag the Words",
       "splitAdaptiveAction": [Function],
       "start": 22.882,
       "task": "首先， 我*起身 hei2 san1*
@@ -872,19 +873,23 @@ Finally, I ___.",
 zoeng1 daan1 ci4 to1 dou3 zing3 kok3 ge3 fong1 gaak3 noi6.
 
 Drag the words into the correct boxes.",
+      "template": [Function],
       "title": "Ordering Events",
-      "type": "DragText",
+      "type": "H5P.DragText 1.10",
     },
-    FreeTextQuestion {
+    SingleChoiceSet {
       "correctText": undefined,
       "correctTime": undefined,
       "end": 31.87,
       "incorrectText": "Review slide 1",
       "incorrectTime": 29.87,
-      "placeholder": "媽媽 maa4 maa1 Mom
-爸爸 baa4 baa1 Dad
-﻿婆婆 po4 po2 Grandma
-﻿爺爺 je4 je2 Grandpa",
+      "libraryTitle": "Single Choice Set",
+      "options": Array [
+        "媽媽 maa4 maa1 Mom",
+        "爸爸 baa4 baa1 Dad",
+        "婆婆 po4 po2 Grandma",
+        "爺爺 je4 je2 Grandpa",
+      ],
       "question": "邊個同你搭巴士?
 
 bin1 go3 tung4 nei5 daap3 baa1 si2?
@@ -892,8 +897,9 @@ bin1 go3 tung4 nei5 daap3 baa1 si2?
 Who went on the bus with you?",
       "splitAdaptiveAction": [Function],
       "start": 29.87,
+      "template": [Function],
       "title": "Who went on the bus with you?",
-      "type": "FreeTextQuestion",
+      "type": "H5P.SingleChoiceSet 1.11",
     },
     TrueFalse {
       "answer": true,
@@ -902,6 +908,7 @@ Who went on the bus with you?",
       "end": 49,
       "incorrectText": undefined,
       "incorrectTime": undefined,
+      "libraryTitle": "True/False Question",
       "question": "十分鐘之後有巴士.
 
 sap6 fan1 zung1 zi1 hau6 jau5 baa1 si2.
@@ -909,8 +916,9 @@ sap6 fan1 zung1 zi1 hau6 jau5 baa1 si2.
 There is a bus after 10 minutes.",
       "splitAdaptiveAction": [Function],
       "start": 47,
+      "template": [Function],
       "title": "10 Minutes",
-      "type": "TrueFalse",
+      "type": "H5P.TrueFalse 1.8",
     },
     Blanks {
       "correctText": undefined,
@@ -918,6 +926,7 @@ There is a bus after 10 minutes.",
       "end": 120.199,
       "incorrectText": undefined,
       "incorrectTime": undefined,
+      "libraryTitle": "Fill in the Blanks",
       "splitAdaptiveAction": [Function],
       "start": 118.199,
       "task": "我冇位坐，又*孭/me1*住個大書包，唔係咁開心。
@@ -930,8 +939,9 @@ I don't have a seat to sit at, and I have to _____ a big backpack. I'm not very 
 hai2 hung1 gaak3 noi6 tin4 soeng5 sik1 dong3 ge3 zung1 man4 zi6 waak6 jyut6 ping3
 
 Fill in the missing word(s) with Chinese characters or Jyutping.",
+      "template": [Function],
       "title": "Carry",
-      "type": "Blanks",
+      "type": "H5P.Blanks 1.14",
     },
     DragQuestion {
       "correctText": undefined,
@@ -965,10 +975,13 @@ Grandma",
       ],
       "incorrectText": undefined,
       "incorrectTime": undefined,
+      "libraryTitle": "Drag and Drop",
       "splitAdaptiveAction": [Function],
       "start": 177.86,
       "taskDescription": "拖放：佢哋以乜嘢次序上巴士？to1 fong3: keoi5 dei6 ji5 mat1 je5 ci3 zeoi6 soeng5 baa1 si2? Drag and Drop: In what order did these people get on the bus?",
-      "type": "DragQuestion",
+      "template": [Function],
+      "title": "",
+      "type": "H5P.DragQuestion 1.14",
     },
     FreeTextQuestion {
       "correctText": undefined,
@@ -976,19 +989,22 @@ Grandma",
       "end": 255,
       "incorrectText": undefined,
       "incorrectTime": undefined,
+      "libraryTitle": "Free Text Question",
       "placeholder": "十五分鐘; sap6 ng5 fan2 zung1; 15 minutes",
       "question": "由你屋企到學校需要幾長時間？jau4 nei5 uk1 kei5 dou3 hok6 haau6 seoi1 jiu3 gei2 coeng4 si4 gaan3? How long does it take to get from your house to school?",
       "splitAdaptiveAction": [Function],
       "start": 253,
+      "template": [Function],
       "title": "How long does it take to get from your house to school?",
-      "type": "FreeTextQuestion",
+      "type": "H5P.FreeTextQuestion 1.0",
     },
-    MultipleChoice {
+    MultiChoice {
       "correctText": undefined,
       "correctTime": undefined,
       "end": 256,
       "incorrectText": undefined,
       "incorrectTime": undefined,
+      "libraryTitle": "Multiple Choice",
       "options": Array [
         Object {
           "correct": true,
@@ -1038,8 +1054,9 @@ gu3 si6 jap6 min6, jau5 bin1 go3 daap3 baa1 si2?
 Who took the bus in the tory?",
       "splitAdaptiveAction": [Function],
       "start": 254,
+      "template": [Function],
       "title": "Who took the bus?",
-      "type": "MultipleChoice",
+      "type": "H5P.MultiChoice 1.16",
     },
     Text {
       "correctText": undefined,
@@ -1047,15 +1064,19 @@ Who took the bus in the tory?",
       "end": 1,
       "incorrectText": undefined,
       "incorrectTime": undefined,
+      "libraryTitle": "Text",
       "splitAdaptiveAction": [Function],
       "start": 1,
+      "template": [Function],
       "text": "This is some text that you can display without any interaction
 
 You can give instructions, add copyright notices etc.",
-      "type": "Text",
+      "title": "",
+      "type": "H5P.Text 1.1",
     },
   ],
   "mediaLink": "https://www.youtube.com/watch?v=FwdMr6cYcN0&amp;ab_channel=%E5%86%9A%E5%94%AA%E5%94%A5%E7%B2%B5%E6%96%87%E8%AE%80%E6%9C%ACHambaanglaangCantoneseGradedReaders",
+  "template": [Function],
   "title": "《搭巴士》Taking The Bus (Child, Lv 1): Interactive Video: Cantonese Version",
 }
 `;
