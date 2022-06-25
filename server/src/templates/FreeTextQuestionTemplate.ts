@@ -1,3 +1,4 @@
+import { toHtml } from '../helpers/html';
 import FreeTextQuestion from '../content-types/FreeTextQuestion';
 import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 
@@ -12,7 +13,7 @@ const template = (data: FreeTextQuestion) => ({
         submitButtonLabel: 'Answer and proceed',
         language: 'en'
     },
-    question: data.question
+    question: toHtml(data.question, { noParagraph: true })
 });
 
 export default (data: FreeTextQuestion) => [

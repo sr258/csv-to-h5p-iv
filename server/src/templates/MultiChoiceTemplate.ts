@@ -1,3 +1,4 @@
+import { toHtml } from '../helpers/html';
 import MultiChoice from '../content-types/MultiChoice';
 import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 
@@ -12,7 +13,7 @@ const template = (data: MultiChoice) => ({
             chosenFeedback: '',
             notChosenFeedback: ''
         },
-        text: o.text
+        text: toHtml(o.text)
     })),
     overallFeedback: [
         {
@@ -68,7 +69,7 @@ const template = (data: MultiChoice) => ({
         cancelLabel: 'Cancel',
         confirmLabel: 'Confirm'
     },
-    question: data.question
+    question: toHtml(data.question)
 });
 
 export default (data: MultiChoice) => [

@@ -1,3 +1,4 @@
+import { toHtml } from '../helpers/html';
 import Blanks from '../content-types/Blanks';
 import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 
@@ -5,7 +6,7 @@ const template = (data: Blanks) => ({
     media: {
         disableImageZooming: false
     },
-    text: data.taskDescription,
+    text: toHtml(data.taskDescription),
     overallFeedback: [
         {
             from: 0,
@@ -57,7 +58,7 @@ const template = (data: Blanks) => ({
         cancelLabel: 'Cancel',
         confirmLabel: 'Confirm'
     },
-    questions: [data.task]
+    questions: [toHtml(data.task)]
 });
 
 export default (data: Blanks) => [

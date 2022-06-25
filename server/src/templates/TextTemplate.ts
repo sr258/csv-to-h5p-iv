@@ -1,5 +1,6 @@
 import { createUUID } from '../helpers/uuid';
 import Text from '../content-types/Text';
+import { toHtml } from '../helpers/html';
 
 export default (data: Text) => [
     {
@@ -15,7 +16,7 @@ export default (data: Text) => [
         action: {
             library: 'H5P.Text 1.1',
             params: {
-                text: data.text
+                text: toHtml(data.text)
             },
             subContentId: createUUID(),
             metadata: {

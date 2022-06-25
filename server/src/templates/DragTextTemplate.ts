@@ -1,3 +1,4 @@
+import { toHtml } from '../helpers/html';
 import DragText from '../content-types/DragText';
 import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 
@@ -5,7 +6,7 @@ const template = (data: DragText) => ({
     media: {
         disableImageZooming: false
     },
-    taskDescription: data.taskDescription,
+    taskDescription: toHtml(data.taskDescription),
     overallFeedback: [
         {
             from: 0,

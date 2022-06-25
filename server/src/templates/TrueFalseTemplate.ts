@@ -1,3 +1,4 @@
+import { toHtml } from '../helpers/html';
 import TrueFalse from '../content-types/TrueFalse';
 import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 
@@ -44,7 +45,7 @@ const template = (data: TrueFalse) => ({
         cancelLabel: 'Cancel',
         confirmLabel: 'Confirm'
     },
-    question: data.question
+    question: toHtml(data.question)
 });
 
 export default (data: TrueFalse) => [

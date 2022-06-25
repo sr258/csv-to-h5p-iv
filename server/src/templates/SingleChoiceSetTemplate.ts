@@ -1,12 +1,13 @@
 import SingleChoiceSet from '../content-types/SingleChoiceSet';
 import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 import { createUUID } from '../helpers/uuid';
+import { toHtml } from '../helpers/html';
 
 const template = (data: SingleChoiceSet) => ({
     choices: data.questions.map((q) => ({
         subContentId: createUUID(),
-        question: q.question,
-        answers: q.options
+        question: toHtml(q.question),
+        answers: q.options.map((o) => toHtml(o))
     })),
     overallFeedback: [
         {
