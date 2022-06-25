@@ -1,4 +1,3 @@
-
 import { createUUID } from '../helpers/uuid';
 import InteractiveVideo from '../content-types/InteractiveVideo';
 
@@ -36,8 +35,8 @@ export default (data: InteractiveVideo) => ({
             bookmarks: [],
             endscreens: [
                 {
-                    time: 262,
-                    label: '4:22 Submit screen'
+                    time: data.submitScreenSeconds,
+                    label: `${data.submitScreenTimecode} Submit screen`
                 }
             ]
         },

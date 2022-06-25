@@ -1,4 +1,6 @@
 import { IContentMetadata } from '@lumieducation/h5p-server';
+
+import { toSeconds } from '../helpers/timecode';
 import InteractiveVideoTemplate from '../templates/InteractiveVideoTemplate';
 import InteractiveVideoInteraction from './InteractiveVideoInteraction';
 import { createInteractiveVideoInteractionFromRow } from './InteractiveVideoInteractionFactory';
@@ -6,6 +8,8 @@ import { createInteractiveVideoInteractionFromRow } from './InteractiveVideoInte
 export default class InteractiveVideo {
     public title: string;
     public mediaLink: string;
+    public submitScreenTimecode: string;
+    public submitScreenSeconds: number;
     public interactions: InteractiveVideoInteraction[];
     public template = InteractiveVideoTemplate;
 
@@ -22,6 +26,12 @@ export default class InteractiveVideo {
             );
         }
 
+        if (!rows[2] || rows[2][0]?.trim() !== 'Submit screen at:') {
+            throw new Error(
+                'Invalid CSV file format (no "Submit screen at:" caption in row 3 column 1)'
+            );
+        }
+
         const title = rows[0][1]?.trim();
         if (!title || title === '') {
             throw new Error('Missing video title');
@@ -32,9 +42,16 @@ export default class InteractiveVideo {
             throw new Error('Missing video link');
         }
 
+        const submitScreenTimecode = rows[2][1]?.trim();
+        if (!submitScreenTimecode || submitScreenTimecode === '') {
+            throw new Error('Missing submit screen timecode');
+        }
+
         iv.title = title;
         iv.mediaLink = link;
-        iv.interactions = rows.slice(3).map((val, index) => {
+        iv.submitScreenTimecode = submitScreenTimecode;
+        iv.submitScreenSeconds = toSeconds(submitScreenTimecode);
+        iv.interactions = rows.slice(4).map((val, index) => {
             try {
                 return createInteractiveVideoInteractionFromRow(val);
             } catch (error) {
