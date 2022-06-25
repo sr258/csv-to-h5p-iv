@@ -1,13 +1,13 @@
 import { createUUID } from '../helpers/uuid';
 import Text from '../content-types/Text';
-import { toHtml } from '../helpers/html';
+import { markdownLinkToHtml, toHtml } from '../helpers/html';
 
 export default (data: Text) => [
     {
         x: 0,
         y: 0,
         width: 40,
-        height: 19.213973799126638,
+        height: 19.65,
         duration: {
             from: 1,
             to: 1
@@ -16,7 +16,7 @@ export default (data: Text) => [
         action: {
             library: 'H5P.Text 1.1',
             params: {
-                text: toHtml(data.text)
+                text: markdownLinkToHtml(toHtml(data.text))
             },
             subContentId: createUUID(),
             metadata: {
@@ -39,14 +39,14 @@ export default (data: Text) => [
                 protocol: 'http://'
             },
             visualize: false,
-            type: 'timecode',
-            time: data.start
+            type: '-', // 'timecode',
+            time: 1 // data.start
         },
         label: ''
     },
     {
         x: 0,
-        y: 85.3954391072295,
+        y: 85.40,
         width: 40,
         height: 3.274585152838428,
         duration: {

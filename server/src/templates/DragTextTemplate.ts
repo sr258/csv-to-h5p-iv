@@ -1,4 +1,4 @@
-import { toHtml } from '../helpers/html';
+import { markdownLinkToHtml, toHtml } from '../helpers/html';
 import DragText from '../content-types/DragText';
 import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 
@@ -6,7 +6,7 @@ const template = (data: DragText) => ({
     media: {
         disableImageZooming: false
     },
-    taskDescription: toHtml(data.taskDescription),
+    taskDescription: markdownLinkToHtml(toHtml(data.taskDescription)),
     overallFeedback: [
         {
             from: 0,

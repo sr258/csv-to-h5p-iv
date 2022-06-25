@@ -1,4 +1,4 @@
-import { toHtml } from '../helpers/html';
+import { markdownLinkToHtml, toHtml } from '../helpers/html';
 import Blanks from '../content-types/Blanks';
 import InteractiveVideoInteractionTemplate from './InteractiveVideoInteractionTemplate';
 
@@ -6,7 +6,7 @@ const template = (data: Blanks) => ({
     media: {
         disableImageZooming: false
     },
-    text: toHtml(data.taskDescription),
+    text: markdownLinkToHtml(toHtml(data.taskDescription)),
     overallFeedback: [
         {
             from: 0,
