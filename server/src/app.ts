@@ -5,6 +5,8 @@ import open from 'open';
 import fileupload from 'express-fileupload';
 import InteractiveVideoConverter from './InteractiveVideoConverter';
 
+import './helpers/stringifyOverride';
+
 const app = express();
 const port = process.env.PORT ? Number.parseInt(process.env.PORT) : '3000';
 

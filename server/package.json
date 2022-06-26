@@ -10,7 +10,6 @@
         "build": "tsc && npm run build:tailwind && cp '../Draft 3.xlsx' ./build/public/template.xlsx && mkdir -p build/public/scripts/alpinejs/ && cp node_modules/alpinejs/dist/cdn.min.js build/public/scripts/alpinejs/cdn.min.js && cp -r src/views build/src/views && cp -r h5p-libraries build",
         "clean": "rm -rf h5p && rm -rf build && rm -rf coverage && rm -rf node_modules",
         "lint": "eslint ./src",
-        "prepare": "sh download-core.sh c79f97a16fd8c6fc0232c10d5bed5b94502ee9e9 c886fa6ded498bbe0148e9484f9b1534facc264e",
         "start:watch": "NODE_ENV=development ts-node-dev --deps --respawn src/app.ts",
         "start": "node build/src/app.js",
         "test": "jest",
