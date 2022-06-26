@@ -1,12 +1,19 @@
 export const toHtml = (
     text: string,
     options?: {
-        noParagraph?: boolean;
+        paragraph?: 'div' | 'p' | 'none';
     }
-) =>
-    options?.noParagraph
-        ? text.replace(/\r?\n/g, '<br/>')
-        : `<p>${text.replace(/\r?\n/g, '<br/>')}</p>`;
+) => {
+    if (options?.paragraph === undefined || options.paragraph === 'p') {
+        return `<p>${text.replace(/\r?\n/g, '<br/>')}</p>`;
+    } else if (options.paragraph === 'div') {
+        return `<div>${text.replace(/\r?\n/g, '<br/>')}</div>`;
+    } else if (options.paragraph === 'none') {
+        return text.replace(/\r?\n/g, '<br/>');
+    } else {
+        throw new Error('Invalid options.paragraph parameter');
+    }
+};
 
 export const markdownLinkToHtml = (text: string) =>
     text.replace(

@@ -1,3 +1,4 @@
+import DragQuestionTemplate from '../templates/DragQuestionTemplate';
 import InteractiveVideoInteraction from './InteractiveVideoInteraction';
 
 export default class DragQuestion extends InteractiveVideoInteraction {
@@ -11,11 +12,12 @@ export default class DragQuestion extends InteractiveVideoInteraction {
         correctDragablesIndices: number[];
     }[];
     public dragables: string[];
+    public template = DragQuestionTemplate;
 
     public readRow(row: string[]) {
         super.readRow(row);
 
-        this.taskDescription = row[6].trim();
+        this.title = row[6].trim();
         this.dropZones = [];
         this.dragables = [];
         const options = row.slice(8);

@@ -13,7 +13,7 @@ const template = (data: FreeTextQuestion) => ({
         submitButtonLabel: 'Answer and proceed',
         language: 'en'
     },
-    question: toHtml(data.question, { noParagraph: true })
+    question: toHtml(data.question, { paragraph: 'none' })
 });
 
 export default (data: FreeTextQuestion) => [
