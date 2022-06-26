@@ -7,7 +7,7 @@
     "scripts": {
         "build:tailwind:watch": "npx tailwindcss -i ./src/styles/main.css -o ./build/public/styles/main.css --watch",
         "build:tailwind": "npx tailwindcss -i ./src/styles/main.css -o ./build/public/styles/main.css",
-        "build": "tsc && npm run build:tailwind && cp '../Draft 2.xlsx' ./build/public/template.xlsx && mkdir -p build/public/scripts/alpinejs/ && cp node_modules/alpinejs/dist/cdn.min.js build/public/scripts/alpinejs/cdn.min.js && cp -r src/views build/src/views",
+        "build": "tsc && npm run build:tailwind && cp '../Draft 3.xlsx' ./build/public/template.xlsx && mkdir -p build/public/scripts/alpinejs/ && cp node_modules/alpinejs/dist/cdn.min.js build/public/scripts/alpinejs/cdn.min.js && cp -r src/views build/src/views && cp -r h5p-libraries build",
         "clean": "rm -rf h5p && rm -rf build && rm -rf coverage && rm -rf node_modules",
         "lint": "eslint ./src",
         "prepare": "sh download-core.sh c79f97a16fd8c6fc0232c10d5bed5b94502ee9e9 c886fa6ded498bbe0148e9484f9b1534facc264e",
@@ -55,7 +55,9 @@
     "pkg": {
         "assets": [
             "build/src/views",
-            "build/public"
+            "build/public",
+            "build/h5p-libraries",
+            "node_modules/@lumieducation/h5p-server"
         ],
         "targets": [
             "node16-linux-x64",

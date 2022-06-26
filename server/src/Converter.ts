@@ -11,6 +11,7 @@ import {
     H5PPlayer
 } from '@lumieducation/h5p-server';
 import type { DirectoryResult } from 'tmp-promise';
+import ReadonlyFileLibraryStorage from './helpers/ReadonlyFileLibraryStorage';
 
 export default class Converter {
     protected constructor() {
@@ -36,7 +37,7 @@ export default class Converter {
 
     protected init = async () => {
         this.generalPurposeCache = new fsImplementations.InMemoryStorage();
-        this.libraryStorage = new fsImplementations.FileLibraryStorage(
+        this.libraryStorage = new ReadonlyFileLibraryStorage(
             path.join(__dirname, '../h5p-libraries')
         );
         this.contentDir = await dir({

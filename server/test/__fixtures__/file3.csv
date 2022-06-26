@@ -25,32 +25,30 @@ Finally, I ___.";;;;;;;;;;;;;;;;;;;
 
 bin1 go3 tung4 nei5 daap3 baa1 si2?
 
-Who went on the bus with you?";"﻿﻿媽媽 maa4 maa1 Mom
+Who went on the bus with you?";"媽媽 maa4 maa1 Mom
 爸爸 baa4 baa1 Dad
-﻿婆婆 po4 po2 Grandma
-﻿爺爺 je4 je2 Grandpa";;;;;;;;;;;;;;;;;;;
+婆婆 po4 po2 Grandma
+爺爺 je4 je2 Grandpa";;;;;;;;;;;;;;;;;;;
 32.87;2 s;Single Choice;Who went on the bus with you?;;Review slide 1 (29.87);"邊個同你搭巴士?
 
 bin1 go3 tung4 nei5 daap3 baa1 si2?
 
-Who went on the bus with you?";"﻿﻿媽媽 maa4 maa1 Mom
+Who went on the bus with you?";"媽媽 maa4 maa1 Mom
 爸爸 baa4 baa1 Dad
-﻿婆婆 po4 po2 Grandma
-﻿爺爺 je4 je2 Grandpa";"邊個同你搭巴士?
+婆婆 po4 po2 Grandma
+爺爺 je4 je2 Grandpa";"邊個同你搭巴士?
 
 bin1 go3 tung4 nei5 daap3 baa1 si2?
 
-Who went on the bus with you?";"﻿﻿媽媽 maa4 maa1 Mom
+Who went on the bus with you?";"媽媽 maa4 maa1 Mom
 爸爸 baa4 baa1 Dad
-﻿婆婆 po4 po2 Grandma
-﻿爺爺 je4 je2 Grandpa";"邊個同你搭巴士?
-
+婆婆 po4 po2 Grandma
+爺爺 je4 je2 Grandpa";"邊個同你搭巴士?
 bin1 go3 tung4 nei5 daap3 baa1 si2?
-
-Who went on the bus with you?";"﻿﻿媽媽 maa4 maa1 Mom
+Who went on the bus with you?";"媽媽 maa4 maa1 Mom
 爸爸 baa4 baa1 Dad
-﻿婆婆 po4 po2 Grandma
-﻿爺爺 je4 je2 Grandpa";;;;;;;;;;;;;;;
+婆婆 po4 po2 Grandma
+爺爺 je4 je2 Grandpa";;;;;;;;;;;;;;;
 47;2 s;True False;10 Minutes;;;"十分鐘之後有巴士.
 
 sap6 fan1 zung1 zi1 hau6 jau5 baa1 si2.
@@ -65,7 +63,9 @@ Fill in the missing word(s) with Chinese characters or Jyutping.";"我冇位坐�
 ngo5 mou5 wei2 co5, jau6 __ zyu6 go3 daai6 syu1 baau1, m4 hai6 gam3 hoi1 sam1.
 
 I don't have a seat to sit at, and I have to _____ a big backpack. I'm not very happy.";;;;;;;;;;;;;;;;;;;
-2:57.86;2 s;Drag and Drop;;;;拖放：佢哋以乜嘢次序上巴士？to1 fong3: keoi5 dei6 ji5 mat1 je5 ci3 zeoi6 soeng5 baa1 si2? Drag and Drop: In what order did these people get on the bus?;;"第一 dai6 jat1 First
+2:57.86;2 s;Drag and Drop;;;;"拖放：佢哋以乜嘢次序上巴士？
+to1 fong3: keoi5 dei6 ji5 mat1 je5 ci3 zeoi6 soeng5 baa1 si2? 
+Drag and Drop: In what order did these people get on the bus?";;"第一 dai6 jat1 First
 -----
 ";"第二 dai6 ji6 Second
 -----
@@ -73,39 +73,31 @@ I don't have a seat to sit at, and I have to _____ a big backpack. I'm not very 
 -----
 2,3
 ";|;"叔叔
-
 suk1 suk1
-
 Uncle";"媽媽同我
-
 maa4 maa1 tung4 ngo5
-
 Mom and me";"婆婆
-
 po4 po2
-
 Grandma";;;;;;;;;;;;
-2:57.86;2 s;Drag and Drop;;;;拖放：佢哋以乜嘢次序上巴士？to1 fong3: keoi5 dei6 ji5 mat1 je5 ci3 zeoi6 soeng5 baa1 si2? Drag and Drop: In what order did these people get on the bus?;;"第一 dai6 jat1 First
+2:57.86;2 s;Drag and Drop;;;;"拖放：佢哋以乜嘢次序上巴士?
+to1 fong3: keoi5 dei6 ji5 mat1 je5 ci3 zeoi6 soeng5 baa1 si2? 
+Drag and Drop: In what order did these people get on the bus?";;"第一 dai6 jat1 First
 -----
 叔叔
-
 suk1 suk1
-
 Uncle";"第二 dai6 ji6 Second
 -----
 媽媽同我
-
 maa4 maa1 tung4 ngo5
-
 Mom and me";"第三 dai6 saam1 Third
 -----
 婆婆
-
 po4 po2
-
 Grandma";;;;;;;;;;;;;;;;
 4:13;2 s;Free Text;How long does it take to get from your house to school?;;;"由你屋企到學校需要幾長時間
+
 jau4 nei5 uk1 kei5 dou3 hok6 haau6 seoi1 jiu3 gei2 coeng4 si4 gaan3?
+
 How long does it take to get from your house to school?";"十五分鐘; sap6 ng5 fan2 zung1; 15 minutes";;;;;;;;;;;;;;;;;;;
 4:14;2 s;Multiple Choice;Who took the bus?;;;"故事入面，有邊個搭巴士?
 
