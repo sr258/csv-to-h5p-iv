@@ -31,26 +31,29 @@ app.use(
     )
 );
 app.post('/convert', async (req, res) => {
-    if (!req.files.csv) {
-        res.status(400).send('You must upload a CSV file');
+    try {
+        if (!req.files.csv) {
+            throw new Error('You must upload a CSV file');
+        }
+        if (Array.isArray(req.files.csv)) {
+            throw new Error('You can only upload one CSV file at a time');
+        }
+
+        const csvString = req.files.csv.data.toString();
+
+        const converter = await InteractiveVideoConverter.create();
+        const iv = await converter.parse(csvString);
+        res.setHeader(
+            'Content-disposition',
+            `attachment; filename="${encodeURI(iv.title)}.h5p"`
+        );
+        res.status(200);
+        await converter.writeToWritable(iv, res);
+
+        res.end();
+    } catch (error) {
+        res.render('error', { errorMessage: error.message });
     }
-    if (Array.isArray(req.files.csv)) {
-        res.status(400).send('You can only upload one CSV file at a time');
-        return;
-    }
-
-    const csvString = req.files.csv.data.toString();
-
-    const converter = await InteractiveVideoConverter.create();
-    const iv = await converter.parse(csvString);
-    res.setHeader(
-        'Content-disposition',
-        `attachment; filename="${encodeURI(iv.title)}.h5p"`
-    );
-    res.status(200);
-    await converter.writeToWritable(iv, res);
-
-    res.end();
 });
 
 app.listen(port, () => {
