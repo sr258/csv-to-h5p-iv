@@ -8,7 +8,7 @@
         "build:tailwind:watch": "npx tailwindcss -i ./src/styles/main.css -o ./build/public/styles/main.css --watch",
         "build:tailwind": "npx tailwindcss -i ./src/styles/main.css -o ./build/public/styles/main.css",
         "build": "tsc && npm run build:tailwind && cp './template.xlsx' ./build/public/template.xlsx && mkdir -p build/public/scripts/alpinejs/ && cp node_modules/alpinejs/dist/cdn.min.js build/public/scripts/alpinejs/cdn.min.js && cp -r src/views build/src/views && cp -r h5p-libraries build",
-        "clean": "rm -rf h5p && rm -rf build && rm -rf coverage && rm -rf node_modules",
+        "clean": "rm -rf build && rm -rf coverage && rm -rf node_modules",
         "lint": "eslint ./src",
         "start:watch": "NODE_ENV=development ts-node-dev --deps --respawn src/app.ts",
         "start": "node build/src/app.js",

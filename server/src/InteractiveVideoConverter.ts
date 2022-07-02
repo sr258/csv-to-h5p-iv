@@ -15,7 +15,7 @@ export default class InteractiveVideoConverter extends Converter {
     public parse = async (csvText: string) => {
         const parsedCsv = papa.parse(csvText, {
             header: false,
-            delimiter: ';',
+            delimitersToGuess: [';', ','],
             skipEmptyLines: true
         });
 

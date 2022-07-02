@@ -21,13 +21,14 @@ export default class DragQuestion extends InteractiveVideoInteraction {
         this.dropZones = [];
         this.dragables = [];
         const options = row.slice(8);
-        if (options.some((o) => o.trim().replace('\n', '') === '|')) {
+        if (options.some((o) => o.trim().replace(/\r?\n/, '') === '|')) {
             // 1 : many mode
             // Add dropzones
             let currentIndex = 8;
             let currentCell = row[currentIndex];
+
             while (currentCell && currentCell !== '|') {
-                const match = /^((.|[r\n])*?)\n---+\n([\d,]+)?\n*$/.exec(
+                const match = /^((.|[\r\n])*?)\r?\n---+\r?\n?([\d,]+)?(\r?\n)*$/.exec(
                     currentCell
                 );
                 if (!match) {
@@ -75,7 +76,7 @@ export default class DragQuestion extends InteractiveVideoInteraction {
             let nextCell = row[8];
             let currentIndex = 8;
             while (nextCell && nextCell !== '') {
-                const match = /^((.|[r\n])*?)\n---+\n((.|[r\n])*?)\n*$/.exec(
+                const match = /^((.|[\r\n])*?)\r?\n---+\r?\n((.|[\r\n])*?)(\r?\n)*$/.exec(
                     nextCell
                 );
                 if (!match) {

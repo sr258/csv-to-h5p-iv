@@ -20,7 +20,7 @@ export default class MultiChoice extends InteractiveVideoInteraction {
         this.question = row[6].trim();
         this.options = row[7]
             .split('\n')
-            .map((o) => o.trim())
+            .map((o) => o.replace('\r', '').trim())
             .map((o) => {
                 const match = /^\*\s*(.+)/.exec(o);
                 if (match) {

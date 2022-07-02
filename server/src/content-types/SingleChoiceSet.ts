@@ -29,7 +29,9 @@ export default class SingleChoiceSet extends InteractiveVideoInteraction {
         ) {
             this.questions.push({
                 question: row[currentIndex].trim(),
-                options: row[currentIndex + 1].split('\n').map((o) => o.trim())
+                options: row[currentIndex + 1]
+                    .split('\n')
+                    .map((o) => o.replace('\r', '').trim())
             });
             currentIndex += 2;
         }
