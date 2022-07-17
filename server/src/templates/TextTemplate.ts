@@ -9,8 +9,8 @@ export default (data: Text) => [
         width: 40,
         height: 19.65,
         duration: {
-            from: 1,
-            to: 1
+            from: data.start,
+            to: data.end
         },
         libraryTitle: 'Text',
         action: {
@@ -50,8 +50,8 @@ export default (data: Text) => [
         width: 40,
         height: 3.274585152838428,
         duration: {
-            from: 1,
-            to: 1
+            from: data.start,
+            to: data.end
         },
         libraryTitle: 'Text',
         action: {

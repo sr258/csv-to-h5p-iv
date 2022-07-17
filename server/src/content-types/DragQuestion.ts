@@ -17,7 +17,7 @@ export default class DragQuestion extends InteractiveVideoInteraction {
     public readRow(row: string[]) {
         super.readRow(row);
 
-        this.title = row[6].trim();
+        this.taskDescription = row[6].trim();
         this.dropZones = [];
         this.dragables = [];
         const options = row.slice(8);
