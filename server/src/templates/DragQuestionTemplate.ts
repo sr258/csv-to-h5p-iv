@@ -29,30 +29,6 @@ const template = (data: DragQuestion) => {
             },
             task: {
                 elements: [
-                    {
-                        x: 0,
-                        y: 0,
-                        width: maxWidthEm,
-                        height: 5,
-                        dropZones: [],
-                        type: {
-                            library: 'H5P.AdvancedText 1.1',
-                            params: {
-                                text: toHtml(data.taskDescription, {
-                                    paragraph: 'p'
-                                })
-                            },
-                            metadata: {
-                                contentType: 'Text',
-                                license: 'U',
-                                title: 'Untitled Text',
-                                authors: [],
-                                changes: []
-                            }
-                        },
-                        backgroundOpacity: 0,
-                        multiple: false
-                    },
                     ...randomizedDragables.map((d, dIndex) => ({
                         x: (100 / data.dragables.length) * dIndex,
                         y: 25.8,
@@ -79,11 +55,35 @@ const template = (data: DragQuestion) => {
                         },
                         backgroundOpacity: 100,
                         multiple: false
-                    }))
+                    })),
+                    {
+                        x: 0,
+                        y: 0,
+                        width: maxWidthEm,
+                        height: 5,
+                        dropZones: [],
+                        type: {
+                            library: 'H5P.AdvancedText 1.1',
+                            params: {
+                                text: toHtml(data.taskDescription, {
+                                    paragraph: 'p'
+                                })
+                            },
+                            metadata: {
+                                contentType: 'Text',
+                                license: 'U',
+                                title: 'Untitled Text',
+                                authors: [],
+                                changes: []
+                            }
+                        },
+                        backgroundOpacity: 0,
+                        multiple: false
+                    }
                 ],
                 dropZones: data.dropZones.map((d, dIndex) => ({
                     x: ((100 - spacingX) / data.dropZones.length) * dIndex,
-                    y: 67.70,
+                    y: 67.7,
                     width:
                         (maxWidthEm * 1.06 -
                             percentToEm(spacingX) * data.dropZones.length) /
