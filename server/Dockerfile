@@ -4,7 +4,7 @@ RUN npm install -g clean-modules
 
 WORKDIR /app
 
-COPY . /app/
+COPY ./server /app/
 
 # install 
 RUN npm install 
